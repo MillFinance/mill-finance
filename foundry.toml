@@ -1,0 +1,34 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+# NO `solc =` pin. v4-core's PoolManager pins =0.8.26 while our own contracts
+# pin 0.8.28, so the project needs BOTH and a single pin makes it uncompilable.
+# On a restricted network, drop the static binaries in by hand:
+#   for v in 0.8.26 0.8.28; do
+#     mkdir -p ~/.svm/$v
+#     curl -sSL -o ~/.svm/$v/solc-$v \
+#       https://github.com/ethereum/solidity/releases/download/v$v/solc-static-linux
+#     chmod +x ~/.svm/$v/solc-$v
+#   done
+evm_version = "cancun"
+via_ir = true
+optimizer = true
+optimizer_runs = 200
+remappings = [
+  "forge-std/=lib/forge-std/src/",
+  "@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
+  "v4-core/=lib/v4-core/",
+  "@uniswap/v4-core/=lib/v4-core/",
+  "v4-periphery/=lib/v4-periphery/",
+  "permit2/=lib/permit2/",
+  "solmate/=lib/v4-core/lib/solmate/",
+]
+
+[fuzz]
+runs = 512
+
+[invariant]
+runs = 128
+depth = 64
+fail_on_revert = false

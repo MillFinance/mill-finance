@@ -1,0 +1,21 @@
+# Foundry
+out/
+cache/
+docs/book/
+
+# Foundry writes sender addresses and full transaction data here. Never commit,
+# never publish.
+broadcast/
+
+# Secrets and machine-local config
+.env
+.env.*
+launch.env
+
+# Publish pipeline
+.publish/
+
+# Editor and OS noise
+.DS_Store
+*.swp
+*~

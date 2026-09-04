@@ -1,0 +1,2376 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mill Finance - Up or Down. The mill turns.</title>
+<link rel="icon" href="data:image/png;base64,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">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#000; --panel:#0D0D0D; --panel-2:#161616; --line:#2E2E2E; --line-2:#3D3D3D;
+    --green:#A2DC22; --green-dim:rgba(162,220,34,.12); --green-line:rgba(162,220,34,.3);
+    --ink:#FFF; --ink-2:#D2D2D2; --ink-3:#8E8E8E; --red:#FF5A47; --amber:#E8B93C;
+    --mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    --sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+    --side:272px;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{background:var(--bg); color:var(--ink); font-family:var(--sans); font-size:15px;
+       line-height:1.55; -webkit-font-smoothing:antialiased; min-height:100vh}
+  a{color:var(--green); text-decoration:none}
+  a:hover{text-decoration:underline}
+  ::selection{background:var(--green); color:#000}
+
+  /* ---------- sidebar ---------- */
+  .side{position:fixed; inset:0 auto 0 0; width:var(--side); background:var(--panel);
+        border-right:1px solid var(--line); display:flex; flex-direction:column;
+        padding:22px 16px; z-index:20}
+  .brandbox{display:flex; align-items:center; gap:13px; padding:2px 2px 26px 14px;
+            color:inherit; text-decoration:none; cursor:pointer;
+            transition:opacity .12s}
+  .brandbox:hover{opacity:.78; text-decoration:none}
+  .brandbox img{width:54px; height:54px; border-radius:13px; display:block; flex:none}
+  .bname{flex:1; text-align:center; line-height:1.2}
+  /* MILL is four characters and FINANCE is seven, so MILL is tracked out until
+     the two lines measure the same width. The values below were set by measuring
+     them in a browser, not by eye. */
+  .bname em{display:block; font-style:normal; font-size:22px; font-weight:700;
+            letter-spacing:.552em; text-indent:.552em}
+    .bname span{display:block; font-size:12.5px; font-weight:500; letter-spacing:.517em;
+              text-indent:.517em; text-transform:uppercase; color:var(--ink-3); margin-top:3px}
+  nav{display:flex; flex-direction:column; gap:4px}
+  nav a{display:flex; align-items:center; gap:11px; padding:11px 12px; border-radius:9px;
+        color:var(--ink-2); font-size:14.5px; font-weight:500; border:1px solid transparent;
+        transition:background .12s,color .12s}
+  nav a:hover{background:var(--panel-2); color:var(--ink); text-decoration:none}
+  nav a.on{background:var(--green-dim); color:var(--green); border-color:var(--green-line)}
+  nav a svg{width:17px;height:17px;flex:none}
+  .side .grow{flex:1}
+  .tagline{padding:18px 12px; color:var(--ink-3); font-size:12px; font-style:italic;
+           border-top:1px solid var(--line); margin-top:18px; text-align:center}
+  .social{display:flex; gap:12px; padding:0; justify-content:center; align-items:center}
+  .social a{width:34px; height:34px; border-radius:8px; display:grid; place-items:center;
+            color:var(--ink-3); background:var(--panel-2); border:1px solid var(--line);
+            transition:color .12s,border-color .12s}
+  .social a:hover{color:var(--green); border-color:var(--green-line)}
+  .social svg{width:16px;height:16px;fill:currentColor}
+
+  /* ---------- click-to-copy ---------- */
+  .cp{font:inherit; font-family:var(--mono); font-size:12px; color:var(--ink-2);
+      background:none; border:0; padding:0; cursor:pointer; display:inline-flex;
+      align-items:center; gap:6px; text-align:left; max-width:100%}
+  .cp:hover{color:var(--green)}
+  .cp .ic{width:12px; height:12px; flex:none; opacity:.45}
+  .cp:hover .ic{opacity:1}
+  .cp.done{color:var(--green)}
+  .cp .lbl{overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+  .tokline{display:flex; align-items:center; justify-content:space-between; gap:8px;
+           padding:7px 10px; border-radius:8px; border:1px solid var(--line);
+           background:var(--panel-2); margin-bottom:7px}
+  .tokline .s{font-size:12.5px; font-weight:600; color:var(--ink); flex:none}
+  .contracts{padding:0 6px 14px}
+  .scrolly{max-height:270px; overflow-y:auto; margin-top:4px;
+           scrollbar-width:thin; scrollbar-color:var(--line-2) transparent}
+  .scrolly::-webkit-scrollbar{width:8px}
+  .scrolly::-webkit-scrollbar-thumb{background:var(--line-2); border-radius:4px}
+  .tabs.three button{padding:7px 14px; font-size:13px}
+  .tokline .none{font-family:var(--mono); font-size:12px; color:var(--ink-3)}
+  .contracts h4{margin:0 0 9px; font-size:10.5px; font-weight:700; letter-spacing:.13em;
+                text-transform:uppercase; color:var(--ink-3); padding-left:4px}
+
+  /* ---------- main ---------- */
+  main{margin-left:var(--side); padding:0 30px 70px}
+  .page{max-width:1180px; margin:0 auto}
+  .beta{display:flex; align-items:flex-start; gap:11px; background:rgba(232,185,60,.07);
+        border:1px solid rgba(232,185,60,.28); border-radius:11px; padding:12px 16px;
+        margin:18px 0 0; font-size:13.5px; color:#E9D9A8; line-height:1.5}
+  .beta svg{width:17px;height:17px;flex:none;margin-top:2px;stroke:var(--amber)}
+  .beta b{color:var(--amber); font-weight:600}
+  .topbar{display:flex; align-items:center; gap:16px; padding:20px 0 24px; flex-wrap:wrap}
+  h1{font-size:22px; font-weight:600; margin:0; letter-spacing:-.01em}
+  .spacer{flex:1}
+  .pill{display:inline-flex; align-items:center; gap:8px; font-family:var(--mono); font-size:12px;
+        color:var(--ink-2); background:var(--panel); border:1px solid var(--line);
+        border-radius:999px; padding:7px 13px; white-space:nowrap}
+  .dot-live{width:6px;height:6px;border-radius:50%;background:var(--green);box-shadow:0 0 0 3px var(--green-dim)}
+  .dot-live.stale{background:var(--red); box-shadow:0 0 0 3px rgba(255,90,71,.15)}
+  .btn{font:inherit; font-size:14px; font-weight:600; color:#000; background:var(--green);
+       border:0; border-radius:10px; padding:10px 18px; cursor:pointer; white-space:nowrap;
+       transition:filter .12s}
+  .btn:hover{filter:brightness(1.08)}
+  .btn.ghost{background:transparent; color:var(--ink); border:1px solid var(--line-2)}
+  .btn.ghost:hover{border-color:var(--green-line); color:var(--green); filter:none}
+  .btn.wide{width:100%; padding:14px; font-size:15px; margin-top:16px}
+  .btn:disabled{background:var(--panel-2); color:var(--ink-3); cursor:not-allowed;
+                border:1px solid var(--line); filter:none}
+  .fieldtop{display:flex; justify-content:space-between; align-items:center;
+            font-size:12.5px; color:var(--ink-2); margin-bottom:7px}
+  .fieldtop button{font:inherit; font-size:11px; font-weight:700; letter-spacing:.06em;
+                   color:var(--green); background:var(--green-dim); border:1px solid var(--green-line);
+                   border-radius:6px; padding:3px 9px; cursor:pointer}
+  .status{margin-top:12px; font-size:13px; color:var(--ink-2); min-height:20px;
+          display:flex; align-items:center; gap:8px}
+  .status.ok{color:var(--green)} .status.bad{color:var(--red)}
+  .spin{width:12px;height:12px;border:2px solid var(--line-2); border-top-color:var(--green);
+        border-radius:50%; animation:sp .7s linear infinite; flex:none}
+  @keyframes sp{to{transform:rotate(360deg)}}
+  .rm{font:inherit; font-size:11px; font-weight:600; color:var(--ink-2); background:var(--panel-2);
+      border:1px solid var(--line-2); border-radius:6px; padding:3px 10px; margin-left:12px; cursor:pointer}
+  .rm:hover{color:var(--red); border-color:rgba(255,90,71,.4)}
+  .acts{display:flex; gap:8px; justify-content:flex-end; align-items:center; white-space:nowrap}
+  .acts .rm{margin-left:0}
+  .tile.soon{cursor:default; opacity:.55}
+  .tile.soon:hover{border-color:var(--line); background:var(--panel); transform:none}
+  .back{display:inline-flex; align-items:center; gap:7px; color:var(--ink-3); font-size:13.5px;
+        background:none; border:0; padding:0; cursor:pointer; font:inherit; margin-bottom:2px}
+  .back:hover{color:var(--green)}
+
+  /* ---------- cards ---------- */
+  .grid{display:grid; gap:14px}
+  .cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .card{background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:22px;
+        min-width:0}
+  .card h2{margin:0; font-size:11px; font-weight:700; letter-spacing:.13em;
+           text-transform:uppercase; color:var(--ink-3)}
+  .hint{color:var(--ink-2); font-size:13px; margin:8px 0 0; line-height:1.65}
+  .stat .v{font-family:var(--mono); font-size:25px; font-weight:600; letter-spacing:-.02em; margin-top:10px}
+  .stat .u{color:var(--ink-3); font-size:12px; font-family:var(--mono); margin-top:3px}
+
+  /* ---------- mill tiles ---------- */
+  .sect{display:flex; align-items:baseline; gap:12px; margin:34px 0 14px}
+  .sect h3{margin:0; font-size:16px; font-weight:600}
+  .sect span{color:var(--ink-3); font-size:13px}
+  .tile{background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:20px;
+        cursor:pointer; transition:border-color .14s, transform .14s, background .14s; text-align:left;
+        font:inherit; color:inherit; width:100%; display:block}
+  .tile:hover{border-color:var(--green-line); background:#101010; transform:translateY(-2px)}
+  .tile .pair{display:flex; align-items:center; gap:10px; margin-bottom:4px}
+  .tile .sym{font-size:17px; font-weight:600; letter-spacing:-.01em}
+  .tile .under{color:var(--ink-3); font-size:12.5px; font-family:var(--mono)}
+  .tile .apr{font-family:var(--mono); font-size:30px; font-weight:600; color:var(--green);
+             letter-spacing:-.02em; margin:14px 0 2px}
+  .tile .aprl{color:var(--ink-3); font-size:11px; letter-spacing:.1em; text-transform:uppercase}
+  .tile .foot{display:flex; justify-content:space-between; margin-top:16px; padding-top:13px;
+              border-top:1px solid var(--line); font-size:13px; color:var(--ink-2)}
+  .tile .foot b{font-family:var(--mono); color:var(--ink); font-weight:600; display:block; margin-top:2px}
+  .tile .foot div:last-child{text-align:right}
+  .badge{font-size:10.5px; font-family:var(--mono); padding:3px 7px; border-radius:5px;
+         background:var(--panel-2); border:1px solid var(--line); color:var(--ink-3)}
+
+  /* ---------- detail ---------- */
+  .hero{background:radial-gradient(700px 260px at 8% -40%, rgba(162,220,34,.13), transparent 70%), var(--panel);
+        border:1px solid var(--line); border-radius:16px; padding:28px 26px; margin-bottom:14px}
+  .ratio{font-family:var(--mono); font-size:clamp(38px,7vw,64px); line-height:1;
+         letter-spacing:-.03em; font-weight:600; margin-top:12px}
+  .ratio .frac{color:var(--green)}
+  .ratio-row{display:flex; align-items:flex-end; gap:14px; flex-wrap:wrap}
+  .since{font-family:var(--mono); font-size:13px; color:var(--green); background:var(--green-dim);
+         border:1px solid var(--green-line); padding:5px 11px; border-radius:8px; margin-bottom:5px}
+  .bar{display:flex; height:10px; border-radius:5px; overflow:hidden; margin:18px 0 13px; background:var(--panel-2)}
+  .bar span{display:block; height:100%}
+  .legend{display:flex; gap:18px; flex-wrap:wrap; font-size:13px}
+  .legend div{display:flex; align-items:center; gap:8px; color:var(--ink-2)}
+  .sw{width:9px;height:9px;border-radius:2px;flex:none}
+  .legend b{font-family:var(--mono); color:var(--ink); font-weight:600}
+  .tabs{display:flex; width:max-content; max-width:100%; overflow-x:auto; scrollbar-width:none;
+        background:var(--panel-2); border:1px solid var(--line);
+        border-radius:10px; padding:3px; margin:16px auto}
+  .tabs::-webkit-scrollbar{display:none}
+  .tabs button{white-space:nowrap}
+  .tabs button{font:inherit; font-size:13.5px; color:var(--ink-3); background:none; border:0;
+               padding:7px 20px; border-radius:8px; cursor:pointer; font-weight:500}
+  .tabs button.on{background:var(--green); color:#000; font-weight:600}
+  .field{display:flex; align-items:center; gap:10px; background:var(--panel-2);
+         border:1px solid var(--line); border-radius:10px; padding:13px 15px}
+  .field input{flex:1; min-width:0; background:none; border:0; outline:none; color:var(--ink);
+               font-family:var(--mono); font-size:20px}
+  .field .tick{font-family:var(--mono); font-size:13px; color:var(--ink-3); white-space:nowrap}
+  .flow{display:flex; align-items:center; justify-content:center; color:var(--ink-3); margin:9px 0}
+  .out{font-family:var(--mono); font-size:20px; color:var(--green)}
+  .row{display:flex; justify-content:space-between; font-size:13.5px; color:var(--ink-2);
+       border-top:1px solid var(--line); margin-top:16px; padding-top:12px}
+  .row b{font-family:var(--mono); color:var(--ink); font-weight:600}
+  input.addr{width:100%; background:var(--panel-2); border:1px solid var(--line); border-radius:10px;
+             padding:12px 14px; color:var(--ink); font-family:var(--mono); font-size:13px; outline:none}
+  input.addr:focus{border-color:var(--green-line)}
+  table{width:100%; border-collapse:collapse; margin-top:14px; font-size:14px}
+  td{padding:10px 0; border-bottom:1px solid var(--line)}
+  tr:last-child td{border-bottom:0}
+  td:first-child{color:var(--ink-2)}
+  td:last-child{color:var(--ink); font-weight:500}
+  td:last-child{text-align:right; font-family:var(--mono)}
+  .err{background:rgba(255,90,71,.07); border:1px solid rgba(255,90,71,.28); color:#FFB2A6;
+       border-radius:12px; padding:15px 18px; margin-bottom:14px; font-size:14px}
+  .err code{font-family:var(--mono); background:rgba(0,0,0,.45); padding:2px 6px; border-radius:4px}
+  .skel{color:var(--ink-3)}
+
+  /* ---------- docs ---------- */
+  .doc{max-width:760px}
+  .doc h3{font-size:19px; margin:34px 0 10px; font-weight:600}
+  .doc h3:first-child{margin-top:0}
+  .doc p{color:var(--ink-2); margin:0 0 14px}
+  .doc li{color:var(--ink-2)}
+  .doc ul{color:var(--ink-2); margin:0 0 14px; padding-left:20px}
+  .doc li{margin-bottom:7px}
+  .doc code{font-family:var(--mono); font-size:.9em; background:var(--panel-2);
+            border:1px solid var(--line); padding:2px 6px; border-radius:5px; color:var(--green)}
+  .doc strong{color:var(--ink); font-weight:600}
+  .doc .callout{background:var(--panel); border-left:2px solid var(--green);
+                border-radius:0 10px 10px 0; padding:16px 20px; margin:0 0 18px}
+  .doc .callout p:last-child{margin-bottom:0}
+  .doc ol.seq{counter-reset:seq; list-style:none; padding:0; margin:0 0 16px}
+  .doc ol.seq li{counter-increment:seq; position:relative; padding-left:34px; margin-bottom:11px}
+  .doc ol.seq li::before{content:counter(seq); position:absolute; left:0; top:1px;
+      width:22px; height:22px; border-radius:50%; display:grid; place-items:center;
+      font-family:var(--mono); font-size:11px; font-weight:600; color:var(--green);
+      background:var(--green-dim); border:1px solid var(--green-line)}
+
+  /* ---------- docs shell ---------- */
+  .docs{display:grid; grid-template-columns:206px minmax(0,1fr); gap:46px; align-items:start}
+  .docnav{position:sticky; top:22px; display:flex; flex-direction:column; gap:1px}
+  .docnav h5{margin:16px 0 6px; padding-left:12px; font-size:10.5px; font-weight:700;
+             letter-spacing:.14em; text-transform:uppercase; color:var(--ink-3)}
+  .docnav h5:first-child{margin-top:0}
+  .docnav a{padding:8px 12px; border-radius:8px; color:var(--ink-2); font-size:14px;
+            border-left:2px solid transparent; transition:background .12s,color .12s}
+  .docnav a:hover{background:var(--panel-2); color:var(--ink); text-decoration:none}
+  .docnav a.on{background:var(--green-dim); color:var(--green); border-left-color:var(--green)}
+  .docbody{max-width:none}
+  .docpage{display:none}
+  .docpage.on{display:block}
+  .docpage h3:first-child{margin-top:0}
+  @media(max-width:900px){
+    .docs{grid-template-columns:1fr; gap:22px}
+    .docnav{position:static; flex-direction:row; flex-wrap:wrap; gap:6px;
+            padding-bottom:16px; border-bottom:1px solid var(--line)}
+    .docnav h5{display:none}
+    .docnav a{border:1px solid var(--line); border-left-width:1px; padding:6px 11px; font-size:13px}
+    .docnav a.on{border-color:var(--green-line)}
+  }
+
+  @media(max-width:1000px){.cols-4{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:900px){.cols-2,.cols-3{grid-template-columns:minmax(0,1fr)}}
+  @media(max-width:1200px){
+    .mill3{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .mill3 > :last-child{grid-column:1 / -1}
+  }
+  @media(max-width:900px){.mill3{grid-template-columns:minmax(0,1fr)}}
+  @media(max-width:820px){
+    :root{--side:0px}
+    .side{position:static; width:auto; flex-direction:row; align-items:center; border-right:0;
+          border-bottom:1px solid var(--line); padding:12px 16px; gap:14px; flex-wrap:wrap}
+    .brandbox{padding:0}
+    .brandbox img{width:38px; height:38px; border-radius:9px}
+    .bname{flex:0; text-align:left}
+    .bname em{font-size:16px; letter-spacing:.2em; text-indent:.2em}
+    .bname span{font-size:10px}
+    .tagline{display:none}
+    .contracts{display:none}
+    .side nav{flex-direction:row; gap:6px}
+    .side nav a{padding:8px 12px; font-size:13.5px}
+    .side .grow{flex:0}
+    .social{margin-left:auto; padding:0}
+    main{margin-left:0; padding:0 16px 60px}
+  }
+  @media(max-width:560px){.cols-4{grid-template-columns:1fr}}
+
+  /* ---------- phones ----------
+     Below 640px the top bar cannot hold the brand, two written-out nav links
+     and three social icons on one line. Left to wrap on its own it pushed the
+     page wider than the screen, which is why the Connect Wallet button and the
+     right edge of every card were being cut off - the overflow was in the
+     header, not in the content. Rather than fold the nav onto a second row,
+     the links give up their words: two icons, still first in the bar, with the
+     page title underneath saying where you are. Both keep a title and an
+     aria-label, so the icon is never anonymous. */
+  @media(max-width:640px){
+    .side{flex-wrap:wrap; row-gap:10px; padding:10px 14px}
+    .brandbox{flex:0 1 auto; min-width:0; gap:9px}
+    .social{order:2; margin-left:auto; gap:8px}
+    .social a{width:30px; height:30px; border-radius:7px}
+    .social svg{width:14px; height:14px}
+    .side nav{order:1; flex:none; gap:5px}
+    .side nav a{padding:8px 10px; gap:0; min-width:0}
+    .side nav a span{display:none}
+    .side nav a svg{width:18px; height:18px}
+    main{padding:0 14px 56px}
+    /* The tab strip sizes to its own content, which is wider than a phone once
+       Positions carries a count. Let it shrink, and let it scroll if it still
+       will not fit rather than widening the card. */
+    .tabs{max-width:100%; overflow-x:auto; scrollbar-width:none}
+    .tabs::-webkit-scrollbar{display:none}
+    .tabs button{padding:7px 11px; font-size:12.5px; white-space:nowrap}
+    .tabs.three button{padding:7px 10px; font-size:12px}
+    .scrolly{overflow-x:auto}
+    .topbar{gap:10px; padding:16px 0 18px}
+    h1{font-size:19px}
+    .btn{padding:9px 14px}
+  }
+
+  /* Below 470px the second wordmark line and full-size icons no longer fit
+     alongside the nav, so the mark keeps its name and drops its subtitle. */
+  @media(max-width:470px){
+    .brandbox{gap:8px}
+    .brandbox img{width:32px; height:32px; border-radius:8px}
+    .bname em{font-size:14px; letter-spacing:.14em; text-indent:.14em}
+    .bname span{display:none}
+    .social{gap:5px}
+    .social a{width:28px; height:28px}
+    .social svg{width:13px; height:13px}
+    .side nav a{padding:7px 9px}
+    .side nav a svg{width:17px; height:17px}
+    .side{padding:9px 12px; gap:10px}
+  }
+
+
+  /* Nothing on the page is worth a sideways scrollbar. If a table or a long
+     address does need more room than the screen, it scrolls inside its own box,
+     and .scrolly already does that. */
+  html,body{overflow-x:hidden}
+  .page{min-width:0}
+</style>
+</head>
+<body>
+
+<aside class="side">
+  <a class="brandbox" href="#/farm" title="Farm Volatility" aria-label="Mill Finance - home">
+    <img src="data:image/png;base64,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" alt="Mill">
+    <div class="bname"><em>MILL</em><span>Finance</span></div>
+  </a>
+  <nav>
+    <a href="#/farm" id="navFarm" class="on" title="Farm Volatility" aria-label="Farm Volatility">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l5-6 4 4 4-6 5 5"/><path d="M3 21h18"/></svg>
+      <span>Farm Volatility</span>
+    </a>
+    <a href="#/docs/overview" id="navDocs" title="Documentation" aria-label="Documentation">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 012-2h9l5 5v11a2 2 0 01-2 2H6a2 2 0 01-2-2z"/><path d="M14 3v6h6"/></svg>
+      <span>Documentation</span>
+    </a>
+  </nav>
+  <div class="grow"></div>
+  <div class="contracts"><h4>Contracts</h4><div id="sideTokens"></div></div>
+  <div class="tagline">Up or Down. The mill turns.</div>
+  <div class="social">
+    <a id="lx" target="_blank" rel="noopener" title="X"><svg viewBox="0 0 24 24"><path d="M18.2 2.3h3.3l-7.2 8.3 8.5 11.1h-6.7l-5.2-6.8-6 6.8H1.6l7.7-8.8L1.2 2.3H8l4.7 6.2zm-1.2 17.4h1.8L7.1 4.2H5.2z"/></svg></a>
+    <a id="ltg" target="_blank" rel="noopener" title="Telegram"><svg viewBox="0 0 24 24"><path d="M21.9 4.3l-3 14.2c-.2 1-.8 1.3-1.7.8l-4.6-3.4-2.2 2.1c-.2.2-.5.5-1 .5l.3-4.7 8.6-7.8c.4-.3-.1-.5-.6-.2L6.1 12.5l-4.6-1.4c-1-.3-1-1 .2-1.5l18-6.9c.8-.3 1.5.2 1.2 1.6z"/></svg></a>
+    <a id="lgh" target="_blank" rel="noopener" title="GitHub"><svg viewBox="0 0 24 24"><path d="M12 .5A11.5 11.5 0 004.4 20.6c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.3 1.2-3.2 0-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 015.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.9 1.2 1.9 1.2 3.2 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.5 11.5 0 0012 .5z"/></svg></a>
+  </div>
+</aside>
+
+<main><div class="page">
+
+  <div class="beta" id="draftBanner" style="display:none;background:rgba(232,185,60,.14)">
+    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.9L1.8 18a2 2 0 001.7 3h17a2 2 0 001.7-3L13.7 3.9a2 2 0 00-3.4 0z"/></svg>
+    <div><b>Draft view.</b> You are seeing mills that are hidden from the public page. Drop
+    <code>?draft=1</code> from the URL to see what everyone else sees.</div>
+  </div>
+
+  <div class="beta">
+    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.9L1.8 18a2 2 0 001.7 3h17a2 2 0 001.7-3L13.7 3.9a2 2 0 00-3.4 0z"/></svg>
+    <div><b>Beta.</b> This platform and its features are under active development. By interacting
+    with it you acknowledge that you do so at your own risk, and that bugs or unexpected issues
+    may occur.</div>
+  </div>
+
+  <div class="topbar">
+    <div>
+      <button class="back" id="back" style="display:none">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        All mills
+      </button>
+      <h1 id="pageTitle">Farm Volatility</h1>
+    </div>
+    <div class="spacer"></div>
+    <div class="pill"><span class="dot-live" id="live"></span><span id="net">connecting…</span></div>
+    <button class="btn" id="connect">Connect Wallet</button>
+  </div>
+
+  <div id="error" style="display:none"></div>
+
+  <!-- ===================== INDEX ===================== -->
+  <section id="viewIndex">
+    <div class="grid cols-4">
+      <div class="card stat"><h2>Total value locked</h2><div class="v" id="aTvl"><span class="skel">-</span></div><div class="u" id="aTvlU">across all mills</div></div>
+      <div class="card stat"><h2>Total fees</h2><div class="v" id="aFees"><span class="skel">-</span></div><div class="u">charged to date</div></div>
+      <div class="card stat"><h2>Total yield</h2><div class="v" id="aYield"><span class="skel">-</span></div><div class="u">paid to holders</div></div>
+      <div class="card stat"><h2>Total burned</h2><div class="v" id="aBurn"><span class="skel">-</span></div><div class="u">milled tokens destroyed</div></div>
+    </div>
+    <p class="hint" id="priceNote" style="display:none"></p>
+
+    <div class="sect"><h3>Mills</h3><span id="millCount"></span></div>
+    <div class="grid cols-3" id="tiles"></div>
+  </section>
+
+  <!-- ===================== DETAIL ===================== -->
+  <section id="viewMill" hidden>
+    <div class="hero">
+      <h2 style="margin:0;font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-3)">Redemption ratio</h2>
+      <div class="ratio-row">
+        <div class="ratio" id="ratio"><span class="skel">-.------</span></div>
+        <div class="since" id="sinceBadge" style="display:none"></div>
+      </div>
+      <p class="hint" id="ratioSub">Underlying per milled token. It only ever goes up.</p>
+    </div>
+
+    <div class="grid cols-4" style="margin-bottom:14px">
+      <div class="card stat"><h2>Total value locked</h2><div class="v" id="tvl"><span class="skel">-</span></div><div class="u" id="tvlU">&nbsp;</div></div>
+      <div class="card stat"><h2>Holding APY</h2><div class="v" id="apyHold" style="color:var(--green)"><span class="skel">-</span></div><div class="u">ratio growth, annualised</div></div>
+      <div class="card stat"><h2>LP staking APY</h2><div class="v" id="apyLp" style="color:var(--green)"><span class="skel">-</span></div><div class="u">fees plus ratio growth</div></div>
+      <div class="card stat"><h2>Total burned</h2><div class="v" id="burned"><span class="skel">-</span></div><div class="u" id="burnedU">&nbsp;</div></div>
+    </div>
+
+    <div class="grid cols-3 mill3">
+
+      <!-- ---------- 1. what you hold ---------- -->
+      <div class="card">
+        <h2>Your position</h2>
+        <table style="margin-top:4px">
+          <tr><td id="myAssetL">Underlying</td><td id="myAsset">-</td></tr>
+          <tr><td id="myPodL">Milled</td><td id="myPod">-</td></tr>
+          <tr><td>Liquidity &middot; unstaked</td><td id="myLpFree">-</td></tr>
+          <tr><td>Liquidity &middot; staked</td><td id="myLpStaked">-</td></tr>
+          <tr><td>Rewards claimable</td><td id="myRewards">-</td></tr>
+          <tr><td>Rewards claimed</td><td id="myClaimed">-</td></tr>
+        </table>
+        <p class="hint" id="myNote" style="margin-top:14px">Connect a wallet to see your position.</p>
+      </div>
+
+      <!-- ---------- 2. wrap / unwrap ---------- -->
+      <div class="card">
+        <h2>Wrap &amp; unwrap</h2>
+        <div class="tabs">
+          <button id="tabWrap" class="on">Wrap</button>
+          <button id="tabUnwrap">Unwrap</button>
+        </div>
+        <div class="fieldtop">
+          <span id="balLabel">Balance -</span>
+          <button id="maxBtn" type="button">MAX</button>
+        </div>
+        <div class="field"><input id="amt" type="text" inputmode="decimal" placeholder="0.0" spellcheck="false"><span class="tick" id="inTick">-</span></div>
+        <div class="row"><span>Fee</span><b id="tollBps">-</b></div>
+        <button class="btn wide" id="action" disabled>Connect Wallet</button>
+        <div class="status" id="status"></div>
+      </div>
+
+      <!-- ---------- 3. liquidity ---------- -->
+      <div class="card" id="lpCard">
+        <h2>Liquidity</h2>
+
+        <div id="lpNone" class="hint" style="display:none;margin-top:14px"></div>
+
+        <div id="lpBody" style="display:none">
+          <div class="tabs three">
+            <button id="lqTabAdd" class="on">Add</button>
+            <button id="lqTabPos">Positions</button>
+            <button id="lqTabRew">Rewards</button>
+          </div>
+
+          <!-- add -->
+          <div id="lqAdd">
+            <div class="fieldtop">
+              <span id="lpBal0">Balance -</span><button id="lpMax0" type="button">MAX</button>
+            </div>
+            <div class="field"><input id="lpAmt0" type="text" inputmode="decimal" placeholder="0.0" spellcheck="false"><span class="tick" id="lpTick0">-</span></div>
+            <div class="flow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></div>
+            <div class="fieldtop">
+              <span id="lpBal1">Balance -</span><button id="lpMax1" type="button">MAX</button>
+            </div>
+            <div class="field"><input id="lpAmt1" type="text" inputmode="decimal" placeholder="0.0" spellcheck="false"><span class="tick" id="lpTick1">-</span></div>
+            <div class="row"><span>Pool</span><b id="lpPool">-</b></div>
+          <div class="row" style="border:0;padding-top:7px"><span>Max slippage</span><b id="lpSlip">-</b></div>
+            <button class="btn wide" id="lpAction" disabled>Connect Wallet</button>
+            <div class="status" id="lpStatus"></div>
+          </div>
+
+          <!-- positions -->
+          <div id="lqPos" style="display:none">
+            <div class="scrolly"><table id="lpTable"></table></div>
+            <p class="hint" id="lpEmpty" style="display:none">No positions in this pool yet.</p>
+            <div class="status" id="lqStatus"></div>
+          </div>
+
+          <!-- rewards -->
+          <div id="lqRew" style="display:none">
+            <div id="stCard" style="display:none">
+              <table style="margin-top:4px">
+                <tr><td>Rewards</td><td><span id="stPending">-</span> <span id="stPendingU" style="color:var(--ink-3)"></span></td></tr>
+                <tr><td>Positions staked</td><td id="stMine">-</td></tr>
+                <tr><td>Your share</td><td><span id="stHeld">-</span> <span id="stHeldU" style="color:var(--ink-3);font-size:12px"></span></td></tr>
+                <tr><td>Paid out to all LPs</td><td id="stPaid">-</td></tr>
+              </table>
+              <button class="btn wide" id="stClaim" disabled>Claim rewards</button>
+              <div class="status" id="stStatus"></div>
+              <p class="hint" id="stWarm" style="display:none;margin-top:12px;color:var(--amber)"></p>
+              <p class="hint" id="stAddr" style="margin-top:14px"></p>
+            </div>
+            <p class="hint" id="stNone" style="display:none">No staking vault is set for this pool yet.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid cols-2" style="margin-top:14px">
+      <div class="card">
+        <h2>Fee split</h2>
+        <p class="hint">Charged in milled tokens and divided three ways, automatically, every time
+          anyone wraps or unwraps.</p>
+        <div class="bar">
+          <span id="barBurn" style="background:var(--green)"></span>
+          <span id="barLp" style="background:#4A7A12"></span>
+          <span id="barProto" style="background:#2E2E2E"></span>
+        </div>
+        <div class="legend">
+          <div><i class="sw" style="background:var(--green)"></i>Burned <b id="pctBurn">-</b></div>
+          <div><i class="sw" style="background:#4A7A12"></i>LPs <b id="pctLp">-</b></div>
+          <div><i class="sw" style="background:#2E2E2E"></i>Protocol <b id="pctProto">-</b></div>
+        </div>
+        <table>
+          <tr><td>Wrap fee</td><td id="wrapFee">-</td></tr>
+          <tr><td>Unwrap fee</td><td id="unwrapFee">-</td></tr>
+          <tr><td>Minimum burn share</td><td id="minBurn">-</td></tr>
+          <tr><td>Wrapping</td><td id="wrapOpen">-</td></tr>
+          <tr><td>Total supply</td><td><span id="supply">-</span> <span id="supplyU" style="color:var(--ink-3)"></span></td></tr>
+        </table>
+      </div>
+
+      <div class="card">
+        <h2>Contracts</h2>
+        <table>
+          <tr><td>Vault</td><td id="cMill">-</td></tr>
+          <tr><td>Underlying</td><td id="cAsset">-</td></tr>
+          <tr><td>Staking</td><td id="cStake">-</td></tr>
+        </table>
+        <h2 style="margin-top:24px">Look up an address</h2>
+        <p class="hint" style="margin:8px 0 12px">Read-only - nothing is signed.</p>
+        <input class="addr" id="who" spellcheck="false" placeholder="0x&hellip;">
+        <table id="posTable" style="display:none">
+          <tr><td>Milled tokens held</td><td id="pHold">-</td></tr>
+          <tr><td>Backing value</td><td id="pRedeem">-</td></tr>
+          <tr><td>Would receive (after fee)</td><td id="pOut">-</td></tr>
+          <tr><td>Share of supply</td><td id="pShare">-</td></tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DOCS ===================== -->
+  <section id="viewDocs" hidden>
+    <div class="docs">
+      <nav class="docnav">
+        <h5>Protocol</h5>
+        <a href="#/docs/overview"  data-doc="overview">Overview</a>
+        <a href="#/docs/milled"    data-doc="milled">Milled assets</a>
+        <a href="#/docs/arbitrage" data-doc="arbitrage">Arbitrage routes</a>
+        <a href="#/docs/stocks"    data-doc="stocks">Tokenised stocks</a>
+        <h5>Economics</h5>
+        <a href="#/docs/mill"      data-doc="mill">$MILL</a>
+        <a href="#/docs/revenue"   data-doc="revenue">Protocol revenue</a>
+      </nav>
+
+      <div class="doc docbody">
+
+      <!-- ============================= OVERVIEW ============================ -->
+      <article class="docpage" id="doc-overview">
+        <h3>What Mill Finance is</h3>
+        <p>Mill is a volatility-harvesting protocol on Robinhood Chain, and an openly derivative fork
+          of Peapods Finance. You deposit a token and receive a <strong>milled token</strong> that is
+          a claim on it. The claim is redeemable forever, and the amount it redeems for only ever
+          goes up.</p>
+        <div class="callout">
+          <p><strong>Up or down, the mill turns.</strong> Mill does not care which way the price
+          goes. It earns when tokens move through it - and they move through it on the way up
+          and on the way down alike.</p>
+        </div>
+
+        <h3>Why it exists</h3>
+        <p><strong>Yield that is not emissions.</strong> Most on-chain yield is a token being printed
+          and handed to you. You are paid in the thing whose supply is increasing to pay you, which
+          is dilution with extra steps. Mill pays holders by <em>destroying</em> supply: the fee is
+          charged in milled tokens, most of it is burned, and burning raises what every remaining
+          token redeems for. Nothing is printed. No one is diluted. The yield is denominated in the
+          asset you already wanted to hold.</p>
+        <p><strong>Exposure to a tokenised asset, plus the value of its own volatility.</strong> A
+          tokenised stock on-chain does not trade in lockstep with the stock. It drifts, gets
+          repriced, gets arbitraged back. Every one of those movements is trading activity that
+          nobody currently captures. Wrap the tokenised stock in a Mill and that activity becomes
+          revenue for the people holding it, while the exposure to the underlying stays
+          intact.</p>
+
+        <h3>The four pieces</h3>
+        <p><strong>A Mill</strong> is the vault. One Mill wraps exactly one underlying, permanently.
+          It holds deposits, mints and redeems milled tokens, charges a fee on the way in and on the
+          way out, and has no path by which anyone - including its owner - can move the
+          deposits anywhere except back to a redeemer.</p>
+        <p><strong>A milled token</strong> is what you get. <code>mTKN</code> for a Mill over
+          <code>TKN</code>. It is a plain ERC-20, and it carries a redemption ratio that starts at
+          1.000000 and rises.</p>
+        <p><strong>Volatility farming</strong> is what happens in the milled token's own market.
+          <code>mTKN</code> trades against something other than <code>TKN</code>, so it can drift
+          away from what it is worth. Closing that gap means wrapping or unwrapping, and that pays
+          the fee. Nobody has to be right about direction - they only have to trade.</p>
+        <p><strong>The flywheel</strong> is what connects them:</p>
+        <ul>
+          <li>Volatility moves the milled token away from its backing.</li>
+          <li>Arbitrageurs close the gap by wrapping or unwrapping, which charges a fee.</li>
+          <li>Most of the fee is burned, which lifts the redemption ratio for every holder.</li>
+          <li>Part goes to liquidity providers, which deepens the pool.</li>
+          <li>A deeper pool means a tighter band, which means the next gap gets closed sooner and
+            more often.</li>
+          <li>The rest builds the treasury, which funds protocol-owned liquidity - deepening
+            the pool again.</li>
+        </ul>
+        <p>Each turn makes the next turn cheaper to execute. That is the whole design.</p>
+
+        <h3>The four invariants</h3>
+        <ul>
+          <li>There is no path out of a Mill except redemption. No pause, no upgrade, no rescue, no
+            owner function.</li>
+          <li>The redemption ratio never falls, under any operation.</li>
+          <li>Redemption can never be disabled. Deposits can be closed once, permanently.</li>
+          <li>The burn floor is immutable and set at deployment. Governance can raise the holders'
+            share and can never lower it below that floor.</li>
+        </ul>
+
+        <h3>Network</h3>
+        <table>
+          <tr><td>Chain</td><td id="dNet">-</td></tr>
+          <tr><td>RPC</td><td id="dRpc">-</td></tr>
+        </table>
+        <p class="hint" style="margin-top:18px">Not financial advice. Nothing here is an offer of
+          anything, and nothing here is a promise of a return.</p>
+      </article>
+
+      <!-- ============================ MILLED ============================== -->
+      <article class="docpage" id="doc-milled">
+        <h3>Milled assets</h3>
+        <p>A milled token is an ordinary ERC-20. No transfer hooks, no rebasing, no balance that
+          changes while it sits in your wallet. Anywhere an ERC-20 works, it works: a lending market,
+          a vault, a multisig, a bridge, another AMM.</p>
+        <p>What makes it a claim is the <strong>redemption ratio</strong> - the vault's holdings
+          divided by what it owes. It starts at <code>1.000000</code> and is
+          <strong>monotonically non-decreasing</strong>: every burn pushes it up and there is no
+          operation, admin or otherwise, that can push it down. Your balance never changes. What each
+          unit of that balance is worth does.</p>
+        <p>Redemption is unconditional and permanent. New deposits can be closed once and for all by
+          governance, for a delisted or deprecated underlying. Redemption cannot be closed by
+          anyone, ever.</p>
+
+        <h3>Wrapping and unwrapping</h3>
+        <p><strong>Wrap</strong> deposits <code>TKN</code> and mints <code>mTKN</code> priced at the
+          current ratio, less the wrap fee. <strong>Unwrap</strong> burns <code>mTKN</code> and
+          returns <code>TKN</code> at the current ratio, less the unwrap fee. Both settle the vault's
+          outstanding fees before pricing, so nobody is ever quoted a stale ratio - and your
+          own toll never partly refunds itself.</p>
+        <p>The fees are fixed at deployment and cannot be raised afterwards by anyone. Neither can
+          exceed its hard ceiling: 1% to wrap, 3% to unwrap.</p>
+        <p>Milled tokens carry three more decimals than their underlying - 21 for an
+          18-decimal token. That is a deliberate virtual-share offset that makes the classic
+          first-depositor inflation attack cost the attacker roughly a thousand times what they could
+          steal.</p>
+
+        <h3>Two ways to hold it</h3>
+        <p><strong>Passively.</strong> Hold <code>mTKN</code> and do nothing. The ratio rises under
+          you as the mill turns. No staking, no locking, no claiming, no transaction of any kind.</p>
+        <p><strong>As a liquidity provider.</strong> Supply <code>mTKN</code> and the quote token to
+          the milled token's pool, then stake the position. Staked positions earn a share of every
+          fee the Mill charges, on top of the trading fees the pool itself pays and the ratio growth
+          on the milled half of the position.</p>
+        <p>Liquidity added through this app is always full range, the way a Uniswap v2 pool works.
+          Only full-range positions can be staked: the vault weights positions by raw liquidity, and
+          a narrow position carries far more liquidity per pound deposited, so allowing mixed ranges
+          would let a one-tick position farm the whole reward.</p>
+        <p>A newly staked position waits five minutes before it can be activated and start earning.
+          That window is what stops a bot minting liquidity in front of a large wrap and burning it
+          the block afterwards - it has to hold real liquidity across a period it cannot
+          predict, which is simply being a liquidity provider.</p>
+      </article>
+
+      <!-- ========================== ARBITRAGE ============================= -->
+      <article class="docpage" id="doc-arbitrage">
+        <h3>Why the gap exists</h3>
+        <p>A milled token has two prices. There is what it is <em>worth</em> - the redemption
+          ratio, arithmetic on what the vault holds. And there is what it <em>trades at</em> in its
+          own pool, which is whatever the last trade left behind.</p>
+        <p>Those two numbers come apart constantly. Somebody sells size into a thin pool. The
+          underlying moves and the milled token's pool has not caught up. A large holder rebalances.
+          None of it requires anyone to be wrong - it is the ordinary behaviour of a market
+          against a reference price that moves independently.</p>
+
+        <h3>Trading below redemption value</h3>
+        <p>The milled token is cheap. Anyone can buy it and redeem it for more than they paid.</p>
+        <ol class="seq">
+          <li>Buy <code>mTKN</code> in the pool, below its redemption value. Buying pushes the pool
+            price up, toward backing.</li>
+          <li>Unwrap it. The vault returns <code>TKN</code> at the full ratio, less the unwrap
+            fee.</li>
+          <li>Keep the difference. The trade is profitable whenever the discount exceeds the round
+            trip: pool fee, plus the unwrap toll, plus slippage.</li>
+        </ol>
+        <p>The pool's hook charges <strong>nothing</strong> on the direction that buys the milled
+          token. A discount is the state that makes a backed wrapper look broken, and it is repaired
+          by exactly this trade. Taxing it would be taxing the repair crew.</p>
+
+        <h3>Trading above redemption value</h3>
+        <p>The milled token is expensive. Anyone can mint it for less than the market will pay.</p>
+        <ol class="seq">
+          <li>Buy <code>TKN</code>, or use what you hold.</li>
+          <li>Wrap it into <code>mTKN</code> at the ratio, less the wrap fee.</li>
+          <li>Sell the <code>mTKN</code> into the pool, above backing. Selling pushes the pool price
+            down, toward backing.</li>
+        </ol>
+        <p>This direction pays the pool fee, the wrap toll <em>and</em> the hook's directional fee,
+          which is charged only on the side that sells the milled token. A premium is a benign state
+          and the protocol is happy to charge for the privilege of unwinding it.</p>
+
+        <h3>The band</h3>
+        <p>Between those two thresholds nothing happens, because nothing is profitable. That gap is
+          the <strong>no-arbitrage band</strong>, and its width is the sum of the round-trip costs on
+          each side. Inside the band the price simply is where it is.</p>
+        <p>The band is not a defect - it is the price of the mechanism. What matters is that it
+          is narrow, and it narrows as liquidity deepens, which is precisely what the LP share of the
+          fee is for.</p>
+
+        <h3>What each crossing produces</h3>
+        <p>Every time the band is crossed, someone wraps or unwraps. That is not a side effect -
+          it is the only way to close either gap. So each crossing yields, in the same
+          transaction:</p>
+        <ul>
+          <li><strong>Fee revenue</strong>, charged in milled tokens.</li>
+          <li><strong>Ratio growth</strong>, because most of that fee is burned, and burning raises
+            what every remaining token redeems for.</li>
+          <li><strong>Price stability</strong>, because the arbitrageur's trade is what moves the
+            pool back toward backing.</li>
+        </ul>
+        <p>The three are the same event seen from three angles. This is why volatility is the input:
+          a quiet week produces no crossings and no yield, and a violent one produces a great many of
+          both.</p>
+      </article>
+
+      <!-- =========================== STOCKS =============================== -->
+      <article class="docpage" id="doc-stocks">
+        <h3>Milled tokenised stocks</h3>
+        <p>A tokenised stock is an on-chain instrument that tracks a real one. It is not the same
+          thing as the stock, and it does not trade in lockstep with it. It has its own order book,
+          its own liquidity, its own hours, and its own reasons to move.</p>
+        <p>Wrapping one in a Mill keeps the exposure and adds a second source of return. Hold
+          <code>mSPY</code> and your backing is <code>SPY</code>: if the tokenised stock doubles, so
+          does what your position is worth. The ratio grows in units of the stock, not in dollars
+          - a Mill does not protect you from the underlying falling, and it is not trying
+          to.</p>
+
+        <h3>Where the activity comes from</h3>
+        <p>A tokenised stock has two clocks, and a milled one earns from both.</p>
+        <p><strong>On-chain.</strong> The tokenised stock trades continuously against crypto assets,
+          including outside market hours, driven by on-chain flow that has nothing to do with the
+          equity. Every move repositions the milled token's pool relative to its backing, and closing
+          that gap runs through the mill.</p>
+        <p><strong>Off-chain.</strong> The real equity moves while the chain is not watching. When
+          the tokenised version has drifted from the stock it represents, the gap does not close by
+          itself - it is closed by a licensed market maker, who is authorised to create and
+          redeem against the real shares and does so when the discrepancy is worth acting on.</p>
+
+        <h3>Two moments, both of which turn the mill</h3>
+        <p>That produces a repeating shape, and both halves of it generate flow:</p>
+        <ol class="seq">
+          <li><strong>The mispricing.</strong> The tokenised stock drifts from the equity it tracks.
+            Traders act on the discrepancy, which moves the tokenised price - and moves the
+            milled token's pool away from its backing.</li>
+          <li><strong>The re-peg.</strong> The licensed market maker steps in and brings the
+            tokenised price back to the real one. That is a second move, in the opposite direction,
+            and the milled token's pool has to be arbitraged back again.</li>
+        </ol>
+        <p>A wrapper on an asset that only ever moved once would earn once. A wrapper on an asset
+          that is systematically pushed away from its reference and then systematically pulled back
+          to it earns on both legs. The mispricing and its correction are the same round trip, and
+          the mill charges for the whole of it.</p>
+        <p>This is why tokenised equities are the natural fit. The re-peg is not speculation about
+          what a market maker <em>might</em> do - it is the mechanism by which a tokenised stock
+          tracks its underlying at all, and it is what makes the asset worth holding in the first
+          place.</p>
+      </article>
+
+      <!-- ============================ $MILL =============================== -->
+      <article class="docpage" id="doc-mill">
+        <h3>$MILL</h3>
+        <p><code>MILL</code> is the protocol's own token, launched on <strong>Pons v2</strong> and
+          paired against <strong>wETH</strong>.</p>
+
+        <h3>The launch fee</h3>
+        <p>Trades in the <code>MILL</code> pool carry an additional <strong>0.5%</strong> fee that
+          goes to the protocol. It is charged in the pool, not on transfer - <code>MILL</code>
+          moves as a plain ERC-20 in a wallet, and the fee applies only to trading against that
+          pool.</p>
+        <p>That fee builds the <strong>treasury</strong>, which has two jobs:</p>
+        <ul>
+          <li><strong>Running the protocol.</strong> Audits, infrastructure, and the work of building
+            the next mills.</li>
+          <li><strong>Protocol-owned liquidity.</strong> Liquidity the protocol holds itself rather
+            than renting from mercenary capital. Rented liquidity leaves the moment the incentive
+            stops; owned liquidity does not, and depth is what keeps the arbitrage band tight enough
+            for the whole mechanism to work.</li>
+        </ul>
+        <p>The second is the one that compounds. Every mill that goes live needs a pool deep enough
+          to arbitrage against, and a treasury that can seed one is the difference between launching
+          a mill and launching a mill that turns.</p>
+
+        <h3>What holding it is</h3>
+        <p><code>MILL</code> is the claim on the protocol's revenue and on its governance. It is not
+          a claim on any Mill's deposits - nothing is, except the milled tokens themselves.
+          Governance can move the fee split above the immutable burn floor, change where the
+          protocol's share is sent, and close new deposits on a mill. It can never reach the assets
+          inside one.</p>
+      </article>
+
+      <!-- =========================== REVENUE ============================== -->
+      <article class="docpage" id="doc-revenue">
+        <h3>Where protocol revenue comes from</h3>
+        <p>Three streams, all of them charged on activity rather than printed.</p>
+
+        <h3>1. Trading fees on milled asset pools</h3>
+        <p>Every milled token pool carries a Uniswap v4 hook that takes a fee on the direction which
+          <strong>sells</strong> the milled token, and nothing at all on the direction that buys it.
+          That fee goes to the protocol.</p>
+        <p>This is <strong>not</strong> the pool's own trading fee. The pool fee belongs to the
+          liquidity providers and Mill takes none of it. The hook's fee sits on top, is capped at 5%
+          by a constant no one can raise, and every change to it - in either direction -
+          serves a five-minute delay, so the rate you can read on-chain is the rate a swap will
+          actually be charged.</p>
+        <p>It is directional for a reason. Buying a discounted milled token is what repairs the peg;
+          selling into a premium is what unwinds a benign state. Charging the second and not the
+          first means the protocol earns from the trade it can afford to tax.</p>
+
+        <h3>2. The protocol's share of the Mill fee</h3>
+        <p>Every wrap and unwrap charges a small fee in milled tokens, split three ways:</p>
+        <ul>
+          <li><strong>Burned</strong> - destroyed, which raises the redemption ratio for every
+            holder. This is the largest share, and its floor is fixed at deployment and can never be
+            lowered.</li>
+          <li><strong>Liquidity providers</strong> - paid to whoever has staked a position in
+            the milled token's pool.</li>
+          <li><strong>Protocol</strong> - the remainder.</li>
+        </ul>
+        <p>Governance can move revenue between the last two freely and can always give more to
+          holders. It can never take holders below the floor.</p>
+
+        <h3>3. The $MILL launch fee</h3>
+        <p>The 0.5% on trades in the <code>MILL</code> pool, described under $MILL.</p>
+
+        <h3>What the protocol does not earn</h3>
+        <p>Nothing from deposits sitting still. There is no management fee, no performance fee, no
+          yield on idle assets, and no rehypothecation. A Mill that nobody trades through earns the
+          protocol nothing at all - which is the correct incentive, and the reason the roadmap
+          is about liquidity depth rather than about total value locked.</p>
+      </article>
+
+      </div>
+    </div>
+  </section>
+
+</div></main>
+
+<script>
+"use strict";
+
+// ===========================================================================
+// CONFIG - edit these
+// ===========================================================================
+const LINKS = {
+  x:  "https://x.com/millfi",
+  tg: "https://t.me/millfi",
+  gh: "https://github.com/millfi/mill",
+};
+
+// Every vault the app should show. `since` is the deploy time (unix seconds) and
+// is what APR is measured against - get it from the deploy transaction. `price`
+// is USD per whole unit of the UNDERLYING, used only to add the protocol-wide
+// figures together; leave it null until a price feed is wired in.
+// `pool` is the v4 pool the app can add liquidity to. Omit it and the mill still
+// works - the liquidity card simply says there is no pool yet.
+const MILLS = [
+  // `since`   deploy time in unix seconds; APR is measured against it, and a mill
+  //           younger than three days shows no APR at all.
+  // `pool`    adds the liquidity card. `fromBlock` is the pool's creation block -
+  //           position discovery reads logs from there rather than guessing a window.
+  // `staking` adds the staking card. Must be the vault built for THIS pool.
+  { address:"0x913953228EDC945d2E6Bb384597b9eE7605b62b2", since:1788454941, price:null,
+    staking:"0x3CB0A5848c9089A40369Fd6739D9472B929e8AEa",
+    pool:{ quote:"0x7FE995a80075dF3Dc8Ae11A9b82c7FE4202CD87f", fee:3000, tickSpacing:60,
+           hooks:"0x1271f11F455381C73f64fB166acF2A960ed6c044", fromBlock:53575348 } },
+  { address:"0x631Ae1C36e19163d6123A296C133344fc641fe53", since:1788429169, price:null,
+    pool:{ quote:"0x7FE995a80075dF3Dc8Ae11A9b82c7FE4202CD87f", fee:3000, tickSpacing:60,
+           hooks:"0x1271f11F455381C73f64fB166acF2A960ed6c044", fromBlock:53326063 } },
+];
+
+// Mills that do not exist yet. Shown greyed out so the page reads as a roadmap
+// rather than an empty room. Move an entry into MILLS once it is deployed.
+const UPCOMING = [
+  // Until the vault is deployed the protocol's own mill belongs here. Move it
+  // into MILLS on launch day and delete this line.
+  { sym:"mMILL", wraps:"MILL", note:"governance" },
+  { sym:"mSPY",  wraps:"SPY",  note:"S&P 500" },
+  { sym:"mQQQ",  wraps:"QQQ",  note:"Nasdaq 100" },
+  { sym:"mNVDA", wraps:"NVDA", note:"Nvidia" },
+  { sym:"mTSLA", wraps:"TSLA", note:"Tesla" },
+];
+
+// The two protocol tokens, shown in the sidebar on every page with click-to-copy.
+// Leave `address` null until the token is deployed and the row reads "soon".
+const TOKENS = [
+  { sym:"MILL",  address:null, note:"governance" },
+  { sym:"mMILL", address:null, note:"milled MILL" },
+];
+
+const Q = new URLSearchParams(location.search);
+const CFG = {
+  rpc:      Q.get("rpc")  || "https://rpc.mainnet.chain.robinhood.com",
+  chainId:  Number(Q.get("chain") || 4663),
+  explorer: "https://robinhoodchain.blockscout.com",
+  // v4 periphery. Permit2 is canonical on every chain.
+  poolManager: Q.get("pm")  || "0x8366a39CC670B4001A1121B8F6A443A643e40951",
+  posm:    Q.get("posm")    || "0x58daec3116aae6D93017bAAea7749052E8a04fA7",
+  permit2: Q.get("permit2") || "0x000000000022D473030F116dDEE9F6B43aC78BA3",
+  lens:    Q.get("lens")    || "0xA2aF7b4cbbaeF5BFe0999D279CFF81544A179a46",
+  // Tolerance on the token amounts a liquidity mint may pull and a burn must
+  // return. A v4 mint commits to a LIQUIDITY figure, not to amounts, so without
+  // a cap the position manager pulls whatever the price at execution demands -
+  // and the Permit2 allowance behind it is unlimited. Full-range amounts move
+  // with the square root of price, so 100 bps here tolerates roughly a 2% price
+  // move and still refuses the large one an attacker needs.
+  slippageBps: BigInt(Q.get("slippage") || 100),
+};
+// A whole mill can be described in the URL, which is how a throwaway chain gets
+// exercised without editing the config. `mill` alone gives the vault; add
+// `quote` and the liquidity card appears, `staking` and the rewards tab does.
+//   ?rpc=…&chain=31337&mill=0x…&quote=0x…&staking=0x…&lens=0x…&pm=0x…&posm=0x…
+if(Q.get("mill")){
+  const quote = Q.get("quote");
+  MILLS.length = 0;
+  MILLS.push({
+    address: Q.get("mill"),
+    since:   Number(Q.get("since") || 0),
+    price:   Q.get("price") ? Number(Q.get("price")) : null,
+    staking: Q.get("staking") || undefined,
+    pool: quote ? {
+      quote,
+      fee:         Number(Q.get("fee") || 3000),
+      tickSpacing: Number(Q.get("spacing") || 60),
+      hooks:       Q.get("hooks") || "0x0000000000000000000000000000000000000000",
+      fromBlock:   Number(Q.get("fromBlock") || 0),
+    } : undefined,
+  });
+}
+
+// A mill marked `draft:true` is invisible - absent from the protocol totals,
+// absent from the tiles, and its page falls back to a bare read with no pool or
+// staking card - unless the URL carries ?draft=1.
+//
+// This is obscurity, not access control: the addresses are in this file and the
+// chain is public. It exists so a mill can be deployed, seeded and walked
+// through end to end while the page everyone else sees carries on showing only
+// what is finished - and so abandoning a botched attempt is a one-word edit
+// rather than a rollback.
+const SHOW_DRAFTS = Q.get("draft") === "1";
+const liveMills = () => MILLS.filter(m => !m.draft || SHOW_DRAFTS);
+
+const NET = {4663:"Robinhood Chain", 46630:"RH Testnet", 31337:"Local anvil"};
+const SEL = {
+  ratio:"0x71ca337d", totalAssets:"0x01e1d114", totalSupply:"0x18160ddd",
+  totalBurned:"0xd89135cd", burnBps:"0x53deb3d6", lpBps:"0x5d41f8e4",
+  wrapFeeBps:"0x4fec63cf", unwrapFeeBps:"0xb4c2bf2a", minBurnBps:"0xec8f4298",
+  decimals:"0x313ce567", symbol:"0x95d89b41", wrapDisabled:"0xb1b86443",
+  asset:"0x38d52e0f", previewWrap:"0x404b9d81", previewUnwrap:"0xaa9b074e",
+  balanceOf:"0x70a08231", convertToAssets:"0x07a2d13a",
+  wrap:"0x13bac820", unwrap:"0x7647691d", approve:"0x095ea7b3", allowance:"0xdd62ed3e",
+  // MillLens (read-only) and v4 periphery
+  poolState:"0x146af72c", quoteAdd:"0xaa2987f3", userPositions:"0xf934f36a",
+  modifyLiquidities:"0xdd46508f", p2approve:"0x87517c45", p2allowance:"0x927da105",
+  positionsByIds:"0xccfb52be", poolIdFor:"0xc6d248dd",
+  // MillLPStaking
+  totalWeight:"0x96c82e57", stakedTokens:"0xa5b39cfb", pending:"0xaf6e6238",
+  pendingFor:"0xd7820452", unallocated:"0xdf1c455c", totalClaimed:"0xd54ad2a1",
+  safeTransferFrom:"0x42842e0e", claim:"0x379607f5", claimAll:"0xd1058e59",
+  activate:"0x6222749e", stakes:"0xd5a44f86",
+  unstake:"0x2e17de78",
+};
+
+// PoolManager.ModifyLiquidity(PoolId indexed, address indexed, int24, int24, int256, bytes32)
+// The pool id is an indexed topic, so this finds every position touched in ONE
+// pool - which is a handful of logs, not the whole position manager.
+const TOPIC_MODIFY_LIQUIDITY = "0xf208f4912782fd25c7f114ca3723a2d5dd6f3bcc3ac8db5af63baa85f711d5ec";
+// MillLPStaking.Claimed(address indexed user, uint256 indexed tokenId, uint256 amount)
+// The user is an indexed topic, so a wallet's lifetime claims are one filtered
+// query rather than a scan. The vault keeps no per-user total on chain.
+const TOPIC_CLAIMED = "0x987d620f307ff6b94d58743cb7a7509f24071586a77759b77c2d4e29f75a2f9a";
+
+const MAX_U128 = (1n << 128n) - 1n;
+const MAX_U160 = (1n << 160n) - 1n;
+const MAX_U48  = (1n << 48n) - 1n;
+const MAX_U256 = (1n << 256n) - 1n;
+
+// Custom errors carry no string, only a selector - without this table a revert
+// shows up as unreadable hex.
+const ERRS = {
+  "0x1f2a2005":"Amount is zero, or too small to mint a single share.",
+  "0xd92e233d":"Zero address.",
+  "0xf823501a":"Wrapping is closed on this mill. Unwrapping still works.",
+  "0x82b42900":"Not authorised.",
+  "0xe450d38c":"Not enough balance.",
+  "0xfb8f41b2":"Not enough allowance - approve first.",
+  "0x949682a5":"That position has not finished warming up yet.",
+  "0x3e369158":"Something is still staked, so there is nothing to sweep.",
+};
+
+// ===========================================================================
+// rpc + abi
+// ===========================================================================
+let rpcId = 0;
+async function rpc(method, params){
+  const r = await fetch(CFG.rpc, {method:"POST", headers:{"content-type":"application/json"},
+    body:JSON.stringify({jsonrpc:"2.0", id:++rpcId, method, params})});
+  if(!r.ok) throw new Error("RPC HTTP " + r.status);
+  const j = await r.json();
+  if(j.error) throw new Error(j.error.message || "RPC error");
+  return j.result;
+}
+const call = (to, data) => rpc("eth_call", [{to, data}, "latest"]);
+const arg = v => (typeof v === "bigint" ? v.toString(16) : v.replace(/^0x/,"").toLowerCase()).padStart(64,"0");
+const toBig  = h => (!h || h === "0x") ? 0n : BigInt(h.slice(0,66));
+const toNum  = h => Number(toBig(h));
+const toAddr = h => "0x" + h.slice(26,66);
+// words come back unsigned; ticks are int24 and need sign-extending by hand
+const toInt = h => { let v = BigInt("0x"+h); const m = 1n << 255n; return v >= m ? v - (1n<<256n) : v; };
+const wordAt = (h, i) => h.replace(/^0x/,"").substr(i*64, 64);
+// encodes a value into one abi word, two's complement for negatives
+function w(v){
+  let b = BigInt(v);
+  if (b < 0n) b = (1n << 256n) + b;
+  return b.toString(16).padStart(64, "0");
+}
+const wAddr = a => a.replace(/^0x/,"").toLowerCase().padStart(64,"0");
+const wDynBytes = h => {
+  const c = h.replace(/^0x/,"");
+  return w(c.length/2) + c + (c.length % 64 ? "0".repeat(64 - c.length % 64) : "");
+};
+// a PoolKey inlines as five static words wherever it appears
+const wKey = k => wAddr(k.currency0) + wAddr(k.currency1) + w(k.fee) + w(k.tickSpacing) + wAddr(k.hooks);
+function toStr(h){
+  if(!h || h.length < 130) return "";
+  const len = Number(BigInt("0x"+h.slice(66,130)));
+  let s=""; for(let i=0;i<len;i++) s += String.fromCharCode(parseInt(h.substr(130+i*2,2),16));
+  return s;
+}
+
+// ===========================================================================
+// formatting
+// ===========================================================================
+const group = s => s.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+function units(v, dec, places=4){
+  const base = 10n ** BigInt(dec);
+  if(places === 0) return group((v/base).toString());
+  const f = (v%base).toString().padStart(dec,"0").slice(0,places).replace(/0+$/,"");
+  return group((v/base).toString()) + (f ? "."+f : "");
+}
+// Shows a number at whatever precision makes it visible. A dust position is
+// still a position, and rounding it to "0" makes a working page look broken.
+function amt(v, dec){
+  if(v === 0n) return "0";
+  for(const places of [4, 6, 8, 10, 12, 15]){
+    const t = units(v, dec, places);
+    if(t !== "0") return t;
+  }
+  return "<0.000000000000001";
+}
+function unitsFixed(v, dec, places){
+  const base = 10n ** BigInt(dec);
+  return group((v/base).toString()) + "." + (v%base).toString().padStart(dec,"0").slice(0,places);
+}
+const bps = n => { const v = n/100; return (Number.isInteger(v) ? String(v) : v.toFixed(2)) + "%"; };
+const short = a => a.slice(0,6) + "…" + a.slice(-4);
+const num = v => Number(v)/1; // small helper for readability
+function toFloat(v, dec){ return Number(v) / Math.pow(10, dec); }
+function usd(n){
+  if(n >= 1e9) return "$" + (n/1e9).toFixed(2) + "B";
+  if(n >= 1e6) return "$" + (n/1e6).toFixed(2) + "M";
+  if(n >= 1e3) return "$" + (n/1e3).toFixed(1) + "k";
+  return "$" + n.toFixed(2);
+}
+function parseUnits(str, dec){
+  const m = String(str).trim().replace(/,/g,"").match(/^(\d*)(?:\.(\d*))?$/);
+  if(!m) return null;
+  return BigInt((m[1]||"0") + (m[2]||"").slice(0,dec).padEnd(dec,"0"));
+}
+const $ = id => document.getElementById(id);
+
+// ===========================================================================
+// click-to-copy - any address anywhere on the page
+// ===========================================================================
+const COPY_IC = '<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor"'
+  + ' stroke-width="2" stroke-linecap="round" stroke-linejoin="round">'
+  + '<rect x="9" y="9" width="13" height="13" rx="2"/>'
+  + '<path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>';
+
+function copyBtn(addr, label){
+  return '<button class="cp" data-copy="' + addr + '" title="Copy ' + addr + '">'
+       + (label === "" ? "" : '<span class="lbl">' + (label || short(addr)) + '</span>')
+       + COPY_IC + '</button>';
+}
+// explorer link plus a copy button, for anywhere an address is shown in full
+function addrCell(addr, label){
+  return '<a href="' + CFG.explorer + '/address/' + addr + '" target="_blank" rel="noopener">'
+       + (label || addr) + '</a> ' + copyBtn(addr, "");
+}
+// one delegated listener, so markup rendered later still works
+document.addEventListener("click", e => {
+  const b = e.target.closest && e.target.closest(".cp");
+  if(!b) return;
+  const lbl = b.querySelector(".lbl");
+  const done = () => {
+    b.classList.add("done");
+    if(lbl){ const was = lbl.textContent; lbl.textContent = "Copied";
+             setTimeout(() => { b.classList.remove("done"); lbl.textContent = was; }, 1100); }
+    else setTimeout(() => b.classList.remove("done"), 1100);
+  };
+  const text = b.dataset.copy;
+  if(navigator.clipboard && navigator.clipboard.writeText){
+    navigator.clipboard.writeText(text).then(done).catch(() => fallbackCopy(text, done));
+  }else fallbackCopy(text, done);
+});
+function fallbackCopy(text, done){
+  const ta = document.createElement("textarea");
+  ta.value = text; ta.style.position = "fixed"; ta.style.opacity = "0";
+  document.body.appendChild(ta); ta.select();
+  try{ document.execCommand("copy"); }catch(_){}
+  ta.remove(); done();
+}
+
+function renderSideTokens(){
+  $("sideTokens").innerHTML = TOKENS.map(t =>
+    '<div class="tokline"><span class="s">' + t.sym + '</span>'
+    + (t.address ? copyBtn(t.address, short(t.address))
+                 : '<span class="none">soon</span>') + '</div>').join("");
+}
+
+// ===========================================================================
+// yield
+//
+// APY, not APR: the redemption ratio's realised growth compounded out to a
+// year. It is backward-looking arithmetic on a number that already happened,
+// which early on means a very large number from a very short sample.
+// ===========================================================================
+function apyFrom(gain, days){
+  if(!(days > 0) || !(gain > 0)) return null;
+  const d = Math.max(days, 1/24);          // an hour is the shortest sample used
+  // Done in log space. A large gain over a short window overflows Math.pow to
+  // Infinity, which used to be discarded as "no data" and rendered as a dash -
+  // so a spectacular number showed up as nothing at all.
+  const e = Math.log1p(gain) * (365 / d);
+  if(e > 25) return Infinity;              // past the display cap either way
+  return Math.expm1(e);
+}
+function pct(x){
+  if(x === null || x === undefined || Number.isNaN(x)) return "-";
+  if(!isFinite(x)) return ">1B%";
+  const v = x * 100;
+  if(v >= 1e9) return ">1B%";
+  if(v >= 1e6) return (v/1e6).toFixed(1) + "M%";
+  if(v >= 1e3) return group(Math.round(v).toString()) + "%";
+  return v.toFixed(2) + "%";
+}
+
+// ===========================================================================
+// reading a mill
+// ===========================================================================
+async function readMill(cfg){
+  const a = cfg.address;
+  const asset = toAddr(await call(a, SEL.asset));
+  const [pd, ps, ad, as_, wf, uf, mb, ratio, ta, ts, tb, bb, lb, wd] = await Promise.all([
+    call(a, SEL.decimals), call(a, SEL.symbol),
+    call(asset, SEL.decimals), call(asset, SEL.symbol),
+    call(a, SEL.wrapFeeBps), call(a, SEL.unwrapFeeBps), call(a, SEL.minBurnBps),
+    call(a, SEL.ratio), call(a, SEL.totalAssets), call(a, SEL.totalSupply),
+    call(a, SEL.totalBurned), call(a, SEL.burnBps), call(a, SEL.lpBps), call(a, SEL.wrapDisabled),
+  ]);
+  const m = {
+    address:a, asset, since:cfg.since||0, price:cfg.price, pool:cfg.pool, staking:cfg.staking,
+    draft: !!cfg.draft,
+    podDec:toNum(pd), podSym:toStr(ps)||"mTKN",
+    assetDec:toNum(ad), assetSym:toStr(as_)||"TKN",
+    wrapBps:toNum(wf), unwrapBps:toNum(uf), minBurn:toNum(mb),
+    ratio:toBig(ratio), totalAssets:toBig(ta), totalSupply:toBig(ts),
+    burned:toBig(tb), burnBps:toNum(bb), lpBps:toNum(lb), wrapOff:toBig(wd)===1n,
+  };
+
+  // Yield to holders = what was burned, valued at the current ratio. Fees are
+  // that grossed back up by the burn share - exact while the split is unchanged,
+  // and honest about being an estimate if it ever moves.
+  m.tvl        = toFloat(m.totalAssets, m.assetDec);
+  m.yieldNative = toFloat(m.burned, m.podDec) * toFloat(m.ratio, 18);
+  m.feesNative  = m.burnBps > 0 ? m.yieldNative * 10000 / m.burnBps : 0;
+
+  // The ratio's realised growth, compounded to a year. Never a projection.
+  // A `since` in the future gives negative days, which apyFrom rejects.
+  const days = m.since ? (Date.now()/1000 - m.since) / 86400 : 0;
+  m.days = days;
+  m.apy = apyFrom(toFloat(m.ratio,18) - 1, days);
+  return m;
+}
+
+// ===========================================================================
+// index view
+// ===========================================================================
+let MILLDATA = [];
+
+function renderIndex(){
+  const priced = MILLDATA.filter(m => m.price != null);
+  const sum = f => priced.reduce((s,m) => s + f(m) * m.price, 0);
+
+  // Values in different underlyings cannot be added without prices. But when every
+  // mill wraps the SAME underlying they are directly addable in that unit, which
+  // is better than three dashes. Dollars when priced, native when not, nothing
+  // only when the underlyings genuinely differ.
+  const syms = [...new Set(MILLDATA.map(m => m.assetSym))];
+  const nativeOk = MILLDATA.length > 0 && syms.length === 1;
+  const nsum = f => MILLDATA.reduce((t,m) => t + f(m), 0);
+  const fmt = n => n >= 1000 ? group(n.toFixed(0)) : n.toFixed(4).replace(/0+$/,"").replace(/\.$/,"");
+
+  if(priced.length === MILLDATA.length && MILLDATA.length){
+    $("aTvl").textContent   = usd(sum(m => m.tvl));
+    $("aFees").textContent  = usd(sum(m => m.feesNative));
+    $("aYield").textContent = usd(sum(m => m.yieldNative));
+    $("aTvlU").textContent  = "across all mills";
+    $("priceNote").style.display = "none";
+  }else if(nativeOk){
+    $("aTvl").textContent   = fmt(nsum(m => m.tvl));
+    $("aFees").textContent  = fmt(nsum(m => m.feesNative));
+    $("aYield").textContent = fmt(nsum(m => m.yieldNative));
+    $("aTvlU").textContent  = syms[0] + ", across all mills";
+    $("priceNote").style.display = "block";
+    $("priceNote").textContent = "Totals are in " + syms[0] +
+      " because no USD price is set. Set `price` on each mill in the config to show dollars.";
+  }else if(!MILLDATA.length){
+    // Before the first vault is deployed the page is a roadmap, and a row of
+    // zeroes would read as a protocol that has failed rather than one that has
+    // not opened.
+    $("aTvl").textContent = $("aFees").textContent = $("aYield").textContent = "-";
+    $("aTvlU").textContent = "no mill is live yet";
+    $("priceNote").style.display = "none";
+  }else{
+    $("aTvl").textContent = $("aFees").textContent = $("aYield").textContent = "-";
+    $("aTvlU").textContent = "no price set";
+    $("priceNote").style.display = "block";
+    $("priceNote").textContent = "These mills wrap different underlyings (" + syms.join(", ") +
+      ") and cannot be added without prices. Per-mill figures below are exact.";
+  }
+
+  // Pod tokens are only comparable within a mill, so this is a unit count.
+  const burnedTotal = MILLDATA.reduce((s,m) => s + toFloat(m.burned, m.podDec), 0);
+  $("aBurn").textContent = MILLDATA.length ? group(burnedTotal.toFixed(2)) : "-";
+
+  const live = MILLDATA.map(m => `
+    <button class="tile" data-a="${m.address}">
+      <div class="pair">
+        <span class="sym">${m.podSym}</span>
+        <span class="badge">${m.wrapOff ? "closed" : "open"}</span>
+        ${m.draft ? '<span class="badge" style="color:var(--amber);border-color:rgba(232,185,60,.4)">draft</span>' : ""}
+      </div>
+      <div class="under">wraps ${m.assetSym}</div>
+      <div class="apr">${pct(m.apy)}</div>
+      <div class="aprl">${m.apy === null
+        ? (m.since ? "no yield yet" : "set a deploy date")
+        : "APY"}</div>
+      <div class="foot">
+        <div>TVL<b>${m.price != null ? usd(m.tvl*m.price) : units(m.totalAssets, m.assetDec, 2)+" "+m.assetSym}</b></div>
+        <div>Ratio<b>${unitsFixed(m.ratio, 18, 6)}</b></div>
+      </div>
+    </button>`);
+
+  const soon = UPCOMING.map(u => `
+    <div class="tile soon">
+      <div class="pair"><span class="sym">${u.sym}</span><span class="badge">soon</span></div>
+      <div class="under">wraps ${u.wraps}</div>
+      <div class="apr">-</div>
+      <div class="aprl">not live yet</div>
+      <div class="foot"><div>Underlying<b>${u.note}</b></div><div>Status<b>upcoming</b></div></div>
+    </div>`);
+
+  $("millCount").textContent = (MILLDATA.length ? MILLDATA.length + " live, " : "")
+                             + UPCOMING.length + " upcoming";
+  $("tiles").innerHTML = live.concat(soon).join("");
+  [...document.querySelectorAll(".tile[data-a]")].forEach(t =>
+    t.onclick = () => location.hash = "#/mill/" + t.dataset.a);
+}
+
+// ===========================================================================
+// detail view
+// ===========================================================================
+let M = null, mode = "wrap";
+
+function renderMill(m){
+  M = m;
+  const r = unitsFixed(m.ratio, 18, 6), dot = r.indexOf(".");
+  $("ratio").innerHTML = r.slice(0,dot) + '.<span class="frac">' + r.slice(dot+1) + "</span>";
+  const gain = toFloat(m.ratio,18) - 1;
+  $("sinceBadge").style.display = gain > 0 ? "block" : "none";
+  $("sinceBadge").textContent = "+" + (gain*100).toFixed(4) + "% all time";
+  $("ratioSub").textContent = m.assetSym + " per " + m.podSym + ". It only ever goes up.";
+
+  $("apyHold").textContent = pct(m.apy);
+  refreshApy();
+  $("tvl").textContent = units(m.totalAssets, m.assetDec, 2);  $("tvlU").textContent = m.assetSym;
+  $("burned").textContent = units(m.burned, m.podDec, 2);      $("burnedU").textContent = m.podSym;
+  $("supply").textContent = units(m.totalSupply, m.podDec, 2); $("supplyU").textContent = m.podSym;
+
+  const proto = 10000 - m.burnBps - m.lpBps;
+  $("barBurn").style.width = (m.burnBps/100)+"%";
+  $("barLp").style.width   = (m.lpBps/100)+"%";
+  $("barProto").style.width= (proto/100)+"%";
+  $("pctBurn").textContent = bps(m.burnBps);
+  $("pctLp").textContent   = bps(m.lpBps);
+  $("pctProto").textContent= bps(proto);
+  $("wrapFee").textContent  = bps(m.wrapBps);
+  $("unwrapFee").textContent= bps(m.unwrapBps);
+  $("minBurn").textContent  = bps(m.minBurn);
+  $("wrapOpen").textContent = m.wrapOff ? "closed" : "open";
+  $("cMill").innerHTML  = addrCell(m.address, short(m.address) + " (" + m.podSym + ")");
+  $("cAsset").innerHTML = addrCell(m.asset,   short(m.asset)   + " (" + m.assetSym + ")");
+  $("cStake").innerHTML = m.staking ? addrCell(m.staking, short(m.staking)) : "not deployed";
+  // Only claim the page title while a mill is actually on screen. The 12s refresh
+  // used to call this from the index and overwrite "Farm Volatility".
+  if(/^#\/mill\//.test(location.hash)) $("pageTitle").textContent = m.podSym;
+  renderSideTokens();
+  syncTicks(); position(); loadPool(); loadMine();
+}
+
+// ---------------------------------------------------------------------------
+// what a staked LP earns
+//
+// The vault's total weight is raw full-range liquidity, so its token amounts
+// come straight from the pool price. Value both sides in the underlying, then
+// annualise the LP leg of the fees the same way the holder figure is done.
+// ---------------------------------------------------------------------------
+function podToAsset(podRaw){
+  if(!M) return 0n;
+  const shift = BigInt(M.podDec - M.assetDec);
+  return podRaw * M.ratio / (10n ** (18n + shift));
+}
+// A full-range position is worth exactly the same on both sides at the current
+// price: amount0 = L/sqrtP and amount1 = L*sqrtP, so amount0 priced in token1 is
+// L*sqrtP = amount1. That means the whole position is twice the milled side -
+// and the milled side converts to the underlying through the redemption ratio.
+// No price is ever needed for the other token, so this works for mMILL/wETH
+// exactly as it does for mTKN/TKN.
+function posValue(a0, a1){
+  if(!POOL || !M) return 0n;
+  const millIs0 = POOL.addr0.toLowerCase() === M.address.toLowerCase();
+  return 2n * podToAsset(millIs0 ? a0 : a1);
+}
+// A staked LP earns twice: the LP leg of the toll, and the redemption ratio
+// climbing under the milled half of its own position. Half, because a full-range
+// position is worth the same on both sides and only one of them is the milled
+// token.
+function lpApy(){
+  if(!M || !POOL || !VAULT_W || VAULT_W === 0n) return null;
+  const Q = 1n << 96n;
+  const millIs0 = POOL.addr0.toLowerCase() === M.address.toLowerCase();
+  const podRaw = millIs0 ? VAULT_W * Q / POOL.sqrtPriceX96 : VAULT_W * POOL.sqrtPriceX96 / Q;
+  const staked = toFloat(2n * podToAsset(podRaw), M.assetDec);
+  if(!(staked > 0)) return null;
+  const fromFees = (M.feesNative * M.lpBps / 10000) / staked;
+  const fromRatio = (toFloat(M.ratio, 18) - 1) / 2;
+  return apyFrom(fromFees + fromRatio, M.days);
+}
+function refreshApy(){ if(M) $("apyLp").textContent = pct(lpApy()); }
+
+// ---------------------------------------------------------------------------
+// column one: everything this wallet holds in this mill
+// ---------------------------------------------------------------------------
+async function loadMine(){
+  if(!M) return;
+  const inAsset = v => amt(v, M.assetDec) + " " + M.assetSym;
+  $("myAssetL").textContent = M.assetSym + " balance";
+  $("myPodL").textContent   = M.podSym + " balance";
+  if(!account){
+    ["myAsset","myPod","myLpFree","myLpStaked","myRewards","myClaimed"]
+      .forEach(i => $(i).textContent = "-");
+    $("myNote").textContent = "Connect a wallet to see your position.";
+    return;
+  }
+  $("myNote").textContent = "";
+  try{
+    const [ab, pb] = await Promise.all([
+      call(M.asset,   SEL.balanceOf + wAddr(account)),
+      call(M.address, SEL.balanceOf + wAddr(account)),
+    ]);
+    const pod = toBig(pb);
+    $("myAsset").textContent   = amt(toBig(ab), M.assetDec) + " " + M.assetSym;
+    $("myPod").textContent     = amt(pod, M.podDec) + " " + M.podSym;
+  }catch(e){}
+  await loadMyClaimed();
+  $("myClaimed").textContent = (stakingAddr() && CLAIMED_OK)
+    ? amt(MY_CLAIMED, M.podDec) + " " + M.podSym : "-";
+
+  if(POOL){
+    const free = LPPOS.reduce((t,p) => t + posValue(p.amount0, p.amount1), 0n);
+    const stk  = ((STAKE && STAKE.mine) || []).reduce(
+                   (t,m) => t + (m.d ? posValue(m.d.amount0, m.d.amount1) : 0n), 0n);
+    $("myLpFree").textContent   = inAsset(free);
+    $("myLpStaked").textContent = inAsset(stk);
+    $("myRewards").textContent  = STAKE ? amt(STAKE.pending, M.podDec) + " " + M.podSym : "-";
+  }else{
+    $("myLpFree").textContent = $("myLpStaked").textContent = $("myRewards").textContent = "-";
+  }
+}
+
+function syncTicks(){
+  if(!M) return;
+  $("inTick").textContent = mode==="wrap" ? M.assetSym : M.podSym;
+  $("tollBps").textContent = bps(mode==="wrap" ? M.wrapBps : M.unwrapBps);
+  refreshUser();
+}
+
+// ---------------------------------------------------------------------------
+// balances, allowance, and what the button should say
+// ---------------------------------------------------------------------------
+let USER = {bal:0n, allowance:0n, dec:18};
+let userSeq = 0;
+
+async function refreshUser(){
+  if(!M) return;
+  const seq = ++userSeq;
+  const wrapping = mode === "wrap";
+  USER.dec = wrapping ? M.assetDec : M.podDec;
+
+  if(!account){
+    USER.bal = 0n; USER.allowance = 0n;
+    $("balLabel").textContent = "Balance -";
+    if(seq === userSeq) setAction();
+    return;
+  }
+  try{
+    const [bal, allow] = await Promise.all([
+      call(wrapping ? M.asset : M.address, SEL.balanceOf + arg(account)),
+      wrapping ? call(M.asset, SEL.allowance + arg(account) + arg(M.address)) : Promise.resolve("0x0"),
+    ]);
+    if(seq !== userSeq) return;
+    USER.bal = toBig(bal);
+    USER.allowance = toBig(allow);
+    $("balLabel").textContent = "Balance " + amt(USER.bal, USER.dec) + " " +
+                                (wrapping ? M.assetSym : M.podSym);
+  }catch(e){}
+  if(seq === userSeq) setAction();
+}
+
+function amountRaw(){
+  return parseUnits($("amt").value, USER.dec);
+}
+
+function setAction(){
+  const b = $("action");
+  b.classList.remove("ghost");
+  if(!account){ b.disabled = false; b.textContent = "Connect Wallet"; return; }
+  const raw = amountRaw();
+  if(raw === null || raw === 0n){ b.disabled = true; b.textContent = "Enter an amount"; return; }
+  if(raw > USER.bal){ b.disabled = true; b.textContent = "Insufficient balance"; return; }
+  if(mode === "wrap" && M.wrapOff){ b.disabled = true; b.textContent = "Wrapping is closed"; return; }
+  b.disabled = false;
+  b.textContent = (mode === "wrap" && USER.allowance < raw)
+    ? "Approve " + M.assetSym
+    : (mode === "wrap" ? "Wrap " + M.assetSym : "Unwrap " + M.podSym);
+}
+
+$("maxBtn").onclick = () => { if(USER.bal > 0n){ $("amt").value = units(USER.bal, USER.dec, 18); setAction(); } };
+$("amt").addEventListener("input", setAction);
+
+// ---------------------------------------------------------------------------
+// transactions
+// ---------------------------------------------------------------------------
+function setStatus(text, hash, cls){
+  const el = $("status");
+  el.className = "status" + (cls ? " " + cls : "");
+  el.innerHTML = (cls === undefined && text ? '<span class="spin"></span>' : "") +
+    "<span>" + text + "</span>" +
+    (hash ? ' <a href="'+CFG.explorer+'/tx/'+hash+'" target="_blank" rel="noopener">view</a>' : "");
+}
+function readErr(e){
+  if(e && (e.code === 4001 || /user rejected/i.test(e.message||""))) return "Rejected in wallet.";
+  const hex = (e && (e.data && (e.data.data || e.data)) || "") + "";
+  const m = hex.match && hex.match(/0x[0-9a-f]{8}/i);
+  if(m && ERRS[m[0].toLowerCase()]) return ERRS[m[0].toLowerCase()];
+  return (e && e.message) ? e.message.split("\n")[0].slice(0,140) : "Transaction failed.";
+}
+async function waitReceipt(hash){
+  for(let i=0;i<160;i++){
+    const r = await rpc("eth_getTransactionReceipt", [hash]).catch(()=>null);
+    if(r) return r;
+    await new Promise(res => setTimeout(res, 1500));
+  }
+  throw new Error("Timed out waiting for the transaction.");
+}
+async function send(to, data, pendingText, doneText){
+  setStatus("Confirm in your wallet…");
+  const hash = await window.ethereum.request({method:"eth_sendTransaction", params:[{from:account, to, data}]});
+  setStatus(pendingText, hash);
+  const rec = await waitReceipt(hash);
+  if(rec.status !== "0x1"){ setStatus("Transaction reverted.", hash, "bad"); return false; }
+  setStatus(doneText, hash, "ok");
+  return true;
+}
+
+$("action").onclick = async () => {
+  if(!account) return connect();
+  const raw = amountRaw();
+  if(raw === null || raw === 0n) return;
+  const b = $("action");
+  b.disabled = true;
+  try{
+    if(mode === "wrap" && USER.allowance < raw){
+      // Approve exactly what is being wrapped. An unlimited approval is one
+      // click cheaper and one exploit wider; this vault does not need it.
+      if(await send(M.asset, SEL.approve + arg(M.address) + arg(raw),
+                    "Approving…", "Approved. Now wrap.")) await refreshUser();
+    }else if(mode === "wrap"){
+      if(await send(M.address, SEL.wrap + arg(raw) + arg(account),
+                    "Wrapping…", "Wrapped.")){ $("amt").value = ""; await refresh(); await refreshUser(); }
+    }else{
+      if(await send(M.address, SEL.unwrap + arg(raw) + arg(account),
+                    "Unwrapping…", "Unwrapped.")){ $("amt").value = ""; await refresh(); await refreshUser(); }
+    }
+  }catch(e){ setStatus(readErr(e), null, "bad"); }
+  setAction();
+};
+
+let posSeq = 0;
+async function position(){
+  if(!M) return;
+  const seq = ++posSeq, a = $("who").value.trim(), t = $("posTable");
+  if(!/^0x[0-9a-fA-F]{40}$/.test(a)){ t.style.display="none"; return; }
+  try{
+    const bal = toBig(await call(M.address, SEL.balanceOf + arg(a)));
+    const [redeem, afterFee] = await Promise.all([
+      call(M.address, SEL.convertToAssets + arg(bal)),
+      call(M.address, SEL.previewUnwrap  + arg(bal)),
+    ]);
+    if(seq !== posSeq) return;
+    t.style.display = "table";
+    $("pHold").textContent   = units(bal, M.podDec, 4) + " " + M.podSym;
+    $("pRedeem").textContent = units(toBig(redeem), M.assetDec, 6) + " " + M.assetSym;
+    $("pOut").textContent    = units(toBig(afterFee), M.assetDec, 6) + " " + M.assetSym;
+    $("pShare").textContent  = (M.totalSupply===0n ? 0 : Number(bal*1000000n/M.totalSupply)/10000).toFixed(4) + "%";
+  }catch(e){ if(seq === posSeq) t.style.display="none"; }
+}
+
+// ===========================================================================
+// liquidity - full range only
+//
+// At full range the pool price fixes the ratio between the two sides, so the
+// user picks one amount and the other follows. There is no range to choose,
+// which is the point: it behaves like a v2 deposit.
+//
+// Every number shown here comes from MillLens, and the mint calldata is encoded
+// below. Both were checked byte-for-byte against Solidity before shipping.
+// ===========================================================================
+const ACT_MINT_POSITION = "02", ACT_SETTLE_PAIR = "0d";
+let POOL = null;     // {key, state, sym0, sym1, dec0, dec1, addr0, addr1}
+let LPU  = null;     // {bal0, bal1, allow: {...}}
+let lpSrc = 0;       // which box the user last typed in
+let lpQuote = null;  // {liquidity, amount0, amount1}
+
+// Symbol and decimals for any token, read once and remembered. Falls back to
+// the mill's underlying only if the token answers neither call, which would
+// mean it is not a standard ERC20.
+const TOKMETA = {};
+async function tokenMeta(addr){
+  const k = addr.toLowerCase();
+  if(TOKMETA[k]) return TOKMETA[k];
+  let sym = "?", dec = 18;
+  try{
+    const [s_, d_] = await Promise.all([call(addr, SEL.symbol), call(addr, SEL.decimals)]);
+    sym = toStr(s_) || "?";
+    dec = toNum(d_);
+  }catch(e){
+    if(M){ sym = M.assetSym; dec = M.assetDec; }
+  }
+  TOKMETA[k] = {sym, dec};
+  return TOKMETA[k];
+}
+
+function millPool(m){
+  if(!m.pool || !CFG.lens) return null;
+  const [c0, c1] = m.address.toLowerCase() < m.pool.quote.toLowerCase()
+    ? [m.address, m.pool.quote] : [m.pool.quote, m.address];
+  return {currency0:c0, currency1:c1, fee:m.pool.fee, tickSpacing:m.pool.tickSpacing, hooks:m.pool.hooks};
+}
+
+let poolKeyId = "";
+// Bumped whenever the pool changes. The position and staking loaders capture it
+// on entry and refuse to write if it has moved, so a slow response for one mill
+// cannot render itself against the next mill's decimals and pool key.
+let dataSeq = 0;
+async function loadPool(){
+  const key = millPool(M);
+  // The 12s refresh calls this too. Wiping state unconditionally would clear the
+  // amounts a user is halfway through typing, so only reset when the pool has
+  // actually changed - i.e. when they navigated to a different mill.
+  const id = key ? JSON.stringify(key) : "";
+  if(id !== poolKeyId){ POOL = null; lpQuote = null; LPU = null; LPPOS = []; STAKE = null;
+    dataSeq++;
+    $("lpAmt0").value = ""; $("lpAmt1").value = ""; setLpStatus(""); }
+  poolKeyId = id;
+  if(!key){
+    $("lpBody").style.display = "none";
+    $("lpNone").style.display = "block";
+    $("lpNone").textContent = CFG.lens
+      ? "No pool is configured for this mill yet."
+      : "No lens contract configured, so the app cannot read pool state. Set CFG.lens.";
+    return;
+  }
+  let st;
+  try{ st = await call(CFG.lens, SEL.poolState + wKey(key)); }
+  catch(e){ $("lpBody").style.display="none"; $("lpNone").style.display="block";
+            $("lpNone").textContent = "Could not read the pool."; return; }
+
+  const initialized = toBig("0x"+wordAt(st,0)) === 1n;
+  if(!initialized){
+    $("lpBody").style.display="none";
+    $("lpNone").style.display="block";
+    $("lpNone").textContent = "This pool has not been initialised yet.";
+    return;
+  }
+  const millIs0 = key.currency0.toLowerCase() === M.address.toLowerCase();
+  // The quote side is NOT the mill's underlying. A milled token is deliberately
+  // paired against something else - mMILL/wETH, not mMILL/MILL - so its symbol
+  // and decimals have to come from the token itself. Assuming the underlying's
+  // 18 decimals against a 6-decimal quote would mislabel the input box and
+  // encode an amount a million times too large.
+  const quoteAddr = millIs0 ? key.currency1 : key.currency0;
+  const q = await tokenMeta(quoteAddr);
+  POOL = {
+    key,
+    sqrtPriceX96: toBig("0x"+wordAt(st,1)),
+    liquidity:    toBig("0x"+wordAt(st,4)),
+    lpFee:        Number(toBig("0x"+wordAt(st,3))),
+    addr0: key.currency0, addr1: key.currency1,
+    quote: quoteAddr, quoteSym: q.sym, quoteDec: q.dec,
+    sym0: millIs0 ? M.podSym : q.sym, sym1: millIs0 ? q.sym : M.podSym,
+    dec0: millIs0 ? M.podDec : q.dec, dec1: millIs0 ? q.dec : M.podDec,
+  };
+  try{ POOL.id = await call(CFG.lens, SEL.poolIdFor + wKey(key)); }catch(e){ POOL.id = null; }
+  $("lpNone").style.display = "none";
+  $("lpBody").style.display = "block";
+  $("lpTick0").textContent = POOL.sym0;
+  $("lpTick1").textContent = POOL.sym1;
+  $("lpPool").textContent = POOL.sym0 + " / " + POOL.sym1 + " · " + (POOL.lpFee/10000) + "%";
+  $("lpSlip").textContent = (Number(CFG.slippageBps)/100) + "%";
+  await Promise.all([loadLpUser(), loadPositions(), loadStaking(), loadVaultTotals()]);
+  refreshApy(); await loadMine();
+  // price moves, so a quote taken a moment ago may no longer be the right ratio
+  if($("lpAmt0").value || $("lpAmt1").value) await quoteLp();
+}
+
+async function loadLpUser(){
+  if(!POOL) return;
+  if(!account){ LPU = null; $("lpBal0").textContent = "Balance -"; $("lpBal1").textContent = "Balance -"; setLpAction(); return; }
+  const [b0, b1, e0, e1, p0, p1] = await Promise.all([
+    call(POOL.addr0, SEL.balanceOf + wAddr(account)),
+    call(POOL.addr1, SEL.balanceOf + wAddr(account)),
+    call(POOL.addr0, SEL.allowance + wAddr(account) + wAddr(CFG.permit2)),
+    call(POOL.addr1, SEL.allowance + wAddr(account) + wAddr(CFG.permit2)),
+    call(CFG.permit2, SEL.p2allowance + wAddr(account) + wAddr(POOL.addr0) + wAddr(CFG.posm)),
+    call(CFG.permit2, SEL.p2allowance + wAddr(account) + wAddr(POOL.addr1) + wAddr(CFG.posm)),
+  ]);
+  LPU = {
+    bal0:toBig(b0), bal1:toBig(b1),
+    erc0:toBig(e0), erc1:toBig(e1),
+    // Permit2 allowances also expire; an expired one is as good as none.
+    p2_0:{amount:toBig("0x"+wordAt(p0,0)), exp:toBig("0x"+wordAt(p0,1))},
+    p2_1:{amount:toBig("0x"+wordAt(p1,0)), exp:toBig("0x"+wordAt(p1,1))},
+  };
+  $("lpBal0").textContent = "Balance " + amt(LPU.bal0, POOL.dec0) + " " + POOL.sym0;
+  $("lpBal1").textContent = "Balance " + amt(LPU.bal1, POOL.dec1) + " " + POOL.sym1;
+  setLpAction();
+}
+
+let lpSeq = 0;
+async function quoteLp(){
+  if(!POOL) return;
+  const seq = ++lpSeq;
+  const src = lpSrc;
+  const raw = parseUnits($(src === 0 ? "lpAmt0" : "lpAmt1").value, src === 0 ? POOL.dec0 : POOL.dec1);
+  if(raw === null || raw === 0n){
+    lpQuote = null;
+    $(src === 0 ? "lpAmt1" : "lpAmt0").value = "";
+    setLpAction(); return;
+  }
+  try{
+    const r = await call(CFG.lens, SEL.quoteAdd + wKey(POOL.key) + w(raw) + w(src === 0 ? 1 : 0));
+    if(seq !== lpSeq) return;
+    lpQuote = {liquidity:toBig("0x"+wordAt(r,0)), amount0:toBig("0x"+wordAt(r,1)), amount1:toBig("0x"+wordAt(r,2))};
+    // echo the derived side; the side they typed is left exactly as typed
+    if(src === 0) $("lpAmt1").value = units(lpQuote.amount1, POOL.dec1, 18);
+    else          $("lpAmt0").value = units(lpQuote.amount0, POOL.dec0, 18);
+  }catch(e){ if(seq === lpSeq) lpQuote = null; }
+  setLpAction();
+}
+
+function lpSteps(){
+  if(!lpQuote || !LPU) return [];
+  const steps = [];
+  const now = BigInt(Math.floor(Date.now()/1000));
+  const need = [
+    {tok:POOL.addr0, sym:POOL.sym0, amt:lpQuote.amount0, erc:LPU.erc0, p2:LPU.p2_0},
+    {tok:POOL.addr1, sym:POOL.sym1, amt:lpQuote.amount1, erc:LPU.erc1, p2:LPU.p2_1},
+  ];
+  for(const n of need){
+    if(n.amt === 0n) continue;
+    if(n.erc < n.amt) steps.push({kind:"erc20", tok:n.tok, sym:n.sym});
+    if(n.p2.amount < n.amt || n.p2.exp <= now) steps.push({kind:"permit2", tok:n.tok, sym:n.sym});
+  }
+  steps.push({kind:"mint"});
+  return steps;
+}
+
+function setLpAction(){
+  const b = $("lpAction");
+  if(!POOL) return;
+  if(!account){ b.disabled = false; b.textContent = "Connect Wallet"; return; }
+  if(!lpQuote || lpQuote.liquidity === 0n){ b.disabled = true; b.textContent = "Enter an amount"; return; }
+  if(lpQuote.amount0 > LPU.bal0){ b.disabled = true; b.textContent = "Not enough " + POOL.sym0; return; }
+  if(lpQuote.amount1 > LPU.bal1){ b.disabled = true; b.textContent = "Not enough " + POOL.sym1; return; }
+  const s = lpSteps()[0];
+  b.disabled = false;
+  b.textContent = s.kind === "mint" ? "Add liquidity"
+                : s.kind === "erc20" ? "Approve " + s.sym
+                : "Permit " + s.sym;
+}
+
+// --- calldata, byte-identical to what PositionManager expects -------------
+function encodeMint(key, tickLower, tickUpper, liquidity, owner, max0, max1){
+  // amount0Max / amount1Max are the only thing standing between a quoted
+  // deposit and whatever the pool price says at execution time. They used to be
+  // uint128 max, which with an unlimited Permit2 allowance put the whole wallet
+  // within reach of anyone willing to move the price first.
+  const params0 = wKey(key) + w(tickLower) + w(tickUpper) + w(liquidity)
+                + w(max0) + w(max1) + wAddr(owner) + w(0x180) + w(0);
+  const params1 = wAddr(key.currency0) + wAddr(key.currency1);
+  const bodies = [wDynBytes(params0), wDynBytes(params1)];
+  let arr = w(2), off = 64n;
+  for(const b of bodies){ arr += w(off); off += BigInt(b.length/2); }
+  arr += bodies.join("");
+  const actions = wDynBytes(ACT_MINT_POSITION + ACT_SETTLE_PAIR);
+  const unlockData = w(0x40) + w(0x40 + actions.length/2) + actions + arr;
+  const deadline = BigInt(Math.floor(Date.now()/1000) + 1200);
+  return "0x" + SEL.modifyLiquidities.slice(2) + w(0x40) + w(deadline) + wDynBytes(unlockData);
+}
+// The band either side of a quoted amount. `cap` is the most a mint may pull,
+// `floor` the least a burn must return.
+const cap   = v => { const x = v * (10000n + CFG.slippageBps) / 10000n;
+                     return x > MAX_U128 ? MAX_U128 : x; };
+const floor = v => v * (10000n - CFG.slippageBps) / 10000n;
+
+function fullRangeTicks(spacing){
+  const MIN = -887272, MAX = 887272;
+  return [Math.trunc(MIN/spacing)*spacing, Math.trunc(MAX/spacing)*spacing];
+}
+
+function setLpStatus(text, hash, cls){
+  const el = $("lpStatus");
+  el.className = "status" + (cls ? " " + cls : "");
+  el.innerHTML = (cls === undefined && text ? '<span class="spin"></span>' : "") + "<span>"+text+"</span>" +
+    (hash ? ' <a href="'+CFG.explorer+'/tx/'+hash+'" target="_blank" rel="noopener">view</a>' : "");
+}
+async function sendLp(to, data, pending, done){
+  setLpStatus(pending);
+  const hash = await window.ethereum.request({method:"eth_sendTransaction", params:[{from:account, to, data}]});
+  setLpStatus(pending, hash);
+  const rec = await waitReceipt(hash);
+  if(rec.status !== "0x1"){ setLpStatus("Transaction reverted.", hash, "bad"); return false; }
+  setLpStatus(done, hash, "ok");
+  return true;
+}
+
+$("lpAction").onclick = async () => {
+  if(!account) return connect();
+  const b = $("lpAction"); b.disabled = true;
+  try{
+    const step = lpSteps()[0];
+    if(step.kind === "erc20"){
+      // approve Permit2 to move this token. Permit2 is the canonical contract and
+      // this approval is what every v4 interface asks for.
+      if(await sendLp(step.tok, SEL.approve + wAddr(CFG.permit2) + w(MAX_U256),
+                      "Approving "+step.sym+"…", step.sym+" approved.")) await loadLpUser();
+    }else if(step.kind === "permit2"){
+      if(await sendLp(CFG.permit2, SEL.p2approve + wAddr(step.tok) + wAddr(CFG.posm) + w(MAX_U160) + w(MAX_U48),
+                      "Permitting "+step.sym+"…", step.sym+" permitted.")) await loadLpUser();
+    }else{
+      const [tl, tu] = fullRangeTicks(POOL.key.tickSpacing);
+      const [max0, max1] = [lpQuote.amount0, lpQuote.amount1].map(cap);
+      const data = encodeMint(POOL.key, tl, tu, lpQuote.liquidity, account, max0, max1);
+      if(await sendLp(CFG.posm, data, "Adding liquidity…", "Liquidity added.")){
+        $("lpAmt0").value = ""; $("lpAmt1").value = ""; lpQuote = null;
+        await loadLpUser(); await loadPositions();
+      }
+    }
+  }catch(e){ setLpStatus(readErr(e), null, "bad"); }
+  setLpAction();
+};
+
+// Finding positions by walking token ids backwards stops working the moment the
+// position manager's id space is large and busy - this one is past 1.6M. So the
+// candidate ids come from the pool's own ModifyLiquidity logs, which are scoped
+// to a single pool, and the lens then filters them to the ones this user owns.
+async function poolTokenIds(){
+  const latest = parseInt(await rpc("eth_blockNumber", []), 16);
+  const from = M.pool && M.pool.fromBlock ? M.pool.fromBlock : Math.max(0, latest - 2_000_000);
+  const CHUNK = Number((M.pool && M.pool.logChunk) || 100000);
+  const ids = new Set();
+  // newest first, so a recent position shows up immediately even if an older
+  // chunk later fails or is capped by the node
+  for(let hi = latest; hi >= from; hi -= CHUNK){
+    const lo = Math.max(from, hi - CHUNK + 1);
+    let logs;
+    try{
+      logs = await rpc("eth_getLogs", [{
+        address: CFG.poolManager, fromBlock:"0x"+lo.toString(16), toBlock:"0x"+hi.toString(16),
+        topics:[TOPIC_MODIFY_LIQUIDITY, poolIdOf()],
+      }]);
+    }catch(e){ break; }   // node refused the range; keep whatever we have
+    for(const l of logs){
+      const d = l.data.replace(/^0x/,"");
+      if(d.length >= 256) ids.add(BigInt("0x"+d.slice(192,256)).toString());  // salt == tokenId
+    }
+    if(ids.size >= 200) break;
+  }
+  return [...ids];
+}
+
+// keccak of the abi-encoded PoolKey. Asked of the lens rather than reimplemented
+// in JavaScript, so there is no second place for it to be wrong.
+function poolIdOf(){ return POOL && POOL.id ? POOL.id : null; }
+
+let LPPOS = [];
+async function loadPositions(){
+  if(!POOL || !account){ LPPOS = []; renderLpList(); return; }
+  const seq = dataSeq;
+  let list = [];
+  try{
+    if(poolIdOf()){
+      const ids = await poolTokenIds();
+      if(ids.length){
+        const enc = "0x" + SEL.positionsByIds.slice(2) + wAddr(account) + wKey(POOL.key)
+                  + w(0xe0) + w(ids.length) + ids.map(i => w(i)).join("");
+        list = decodePositions(await rpc("eth_call", [{to:CFG.lens, data:enc}, "latest"]));
+      }
+    }
+    if(!list.length){
+      // fallback for a young pool, or when logs are unavailable
+      list = decodePositions(await call(CFG.lens, SEL.userPositions + wAddr(account) + wKey(POOL.key) + w(500)));
+    }
+  }catch(e){ LPPOS = []; renderLpList(); return; }
+  if(seq !== dataSeq) return;      // navigated away mid-flight
+
+  LPPOS = list;
+  renderLpList();
+}
+
+// ---------------------------------------------------------------------------
+// One list for every position in this pool, staked or not, so a user never has
+// to work out which of two tables a token id is in. Scrolls rather than growing
+// the column when somebody holds a lot of them.
+// ---------------------------------------------------------------------------
+function renderLpList(){
+  const t = $("lpTable");
+  if(!t) return;
+  const staked = (STAKE && STAKE.mine) || [];
+  const rows = [];
+  const pair = (a0, a1) => "<br><span style='color:var(--ink-3);font-size:12px'>"
+      + amt(a0, POOL.dec0) + " " + POOL.sym0 + "  +  " + amt(a1, POOL.dec1) + " " + POOL.sym1 + "</span>";
+
+  if(POOL){
+    for(const p of LPPOS){
+      rows.push("<tr><td>#" + p.tokenId + (p.fullRange ? "" : " · custom range")
+        + pair(p.amount0, p.amount1) + '</td><td><div class="acts">'
+        + (stakingAddr() && p.fullRange ? '<button class="rm" data-stake="' + p.tokenId + '">Stake</button>' : "")
+        + '<button class="rm" data-id="' + p.tokenId + '">Remove</button></div></td></tr>');
+    }
+    for(const m of staked){
+      // A position that has finished warming still earns nothing until someone
+      // calls activate. The button that does it belongs on the row, not in
+      // another tab.
+      const due = !m.active && m.activeAt && nowSec() >= m.activeAt;
+      const tag = m.active
+        ? "<span style='color:var(--green)'>staked</span>"
+        : due
+          ? "<span style='color:var(--amber)'>warm</span>"
+          : "<span style='color:var(--amber)'>warming &middot; " + countdown(m.activeAt - nowSec()) + "</span>";
+      rows.push("<tr><td>#" + m.tokenId + " · " + tag
+        + (m.d ? pair(m.d.amount0, m.d.amount1) : "") + '</td><td><div class="acts">'
+        + (due ? '<button class="rm" data-act="' + m.tokenId + '">Activate</button>' : "")
+        + '<button class="rm" data-un="' + m.tokenId + '">Unstake</button></div></td></tr>');
+    }
+  }
+  t.innerHTML = rows.join("");
+  $("lpEmpty").style.display = rows.length ? "none" : "block";
+  $("lqTabPos").textContent = rows.length ? "Positions (" + rows.length + ")" : "Positions";
+  [...document.querySelectorAll("[data-id]")].forEach(b => b.onclick = () => removeLp(b.dataset.id));
+  [...document.querySelectorAll("[data-stake]")].forEach(b => b.onclick = () => doStake(b.dataset.stake));
+  [...document.querySelectorAll("[data-un]")].forEach(b => b.onclick = () => doUnstake(b.dataset.un));
+  [...document.querySelectorAll("[data-act]")].forEach(b => b.onclick = () => doActivate([b.dataset.act]));
+}
+
+// ---------------------------------------------------------------------------
+// liquidity tabs
+// ---------------------------------------------------------------------------
+function lqTab(which){
+  for(const [btn, panel] of [["lqTabAdd","lqAdd"], ["lqTabPos","lqPos"], ["lqTabRew","lqRew"]]){
+    const on = btn === "lqTab" + which;
+    $(btn).className = on ? "on" : "";
+    $(panel).style.display = on ? "block" : "none";
+  }
+}
+$("lqTabAdd").onclick = () => lqTab("Add");
+$("lqTabPos").onclick = () => lqTab("Pos");
+$("lqTabRew").onclick = () => lqTab("Rew");
+
+function decodePositions(hex){
+  const body = hex.replace(/^0x/,"").slice(64);
+  const n = Number(BigInt("0x"+body.slice(0,64)));
+  const out = [];
+  for(let i=0;i<n;i++){
+    const o = 64 + i*7*64, f = k => body.substr(o + k*64, 64);
+    out.push({tokenId:BigInt("0x"+f(0)).toString(), liquidity:BigInt("0x"+f(1)),
+              fullRange:BigInt("0x"+f(4)) === 1n, amount0:BigInt("0x"+f(5)), amount1:BigInt("0x"+f(6))});
+  }
+  return out;
+}
+
+// --- taking a position apart --------------------------------------------
+const ACT_BURN_POSITION = "03", ACT_TAKE_PAIR = "11";
+function encodeBurn(key, tokenId, recipient, min0, min1){
+  // amount0Min / amount1Min. Zero here would let a burn be sandwiched: move the
+  // price, the position rebalances into the cheap side, the attacker moves it
+  // back. The floors come from the amounts the app has just shown the user.
+  const params0 = w(tokenId) + w(min0) + w(min1) + w(0x80) + w(0);
+  const params1 = wAddr(key.currency0) + wAddr(key.currency1) + wAddr(recipient);
+  const bodies = [wDynBytes(params0), wDynBytes(params1)];
+  let arr = w(2), off = 64n;
+  for(const b of bodies){ arr += w(off); off += BigInt(b.length/2); }
+  arr += bodies.join("");
+  const actions = wDynBytes(ACT_BURN_POSITION + ACT_TAKE_PAIR);
+  const unlockData = w(0x40) + w(0x40 + actions.length/2) + actions + arr;
+  const deadline = BigInt(Math.floor(Date.now()/1000) + 1200);
+  return "0x" + SEL.modifyLiquidities.slice(2) + w(0x40) + w(deadline) + wDynBytes(unlockData);
+}
+
+async function removeLp(tokenId){
+  if(!account) return connect();
+  try{
+    // Floors from what the position was last seen to hold. If it is not in the
+    // list for some reason, fall back to no floor rather than blocking the exit
+    // - a user must always be able to get their liquidity out.
+    const held = LPPOS.find(p => p.tokenId === String(tokenId));
+    const min0 = held ? floor(held.amount0) : 0n;
+    const min1 = held ? floor(held.amount1) : 0n;
+    if(await sendLp(CFG.posm, encodeBurn(POOL.key, tokenId, account, min0, min1),
+                    "Removing position #"+tokenId+"…", "Position removed.")){
+      await loadLpUser(); await loadPositions();
+    }
+  }catch(e){ setLpStatus(readErr(e), null, "bad"); }
+}
+
+$("lpAmt0").addEventListener("input", () => { lpSrc = 0; quoteLp(); });
+$("lpAmt1").addEventListener("input", () => { lpSrc = 1; quoteLp(); });
+$("lpMax0").onclick = () => { if(LPU && LPU.bal0 > 0n){ lpSrc = 0; $("lpAmt0").value = units(LPU.bal0, POOL.dec0, 18); quoteLp(); } };
+$("lpMax1").onclick = () => { if(LPU && LPU.bal1 > 0n){ lpSrc = 1; $("lpAmt1").value = units(LPU.bal1, POOL.dec1, 18); quoteLp(); } };
+
+// ===========================================================================
+// staking - the LP leg of the fee, paid to whoever is staked
+// ===========================================================================
+let STAKE = null;    // {addr, mine:[…], pending, held}
+let STAKE_BAL = 0n;
+let VAULT_W = 0n;    // the vault's total staked weight - read with or without a wallet
+let VAULT_PAID = 0n; // lifetime payout to every LP
+let MY_CLAIMED = 0n; // this wallet's lifetime claims, summed from Claimed logs
+let CLAIMED_OK = true; // false when the log query failed, so we show a dash not a zero
+
+// The APY of a staked position does not depend on who is looking, so these are
+// read whether or not a wallet is connected. Without this the tile stayed blank
+// for every visitor who had not connected.
+async function loadVaultTotals(){
+  const addr = stakingAddr();
+  if(!addr){ VAULT_W = 0n; VAULT_PAID = 0n; return; }
+  try{
+    const [tw, tc] = await Promise.all([
+      call(addr, SEL.totalWeight),
+      call(addr, SEL.totalClaimed),
+    ]);
+    VAULT_W = toBig(tw); VAULT_PAID = toBig(tc);
+  }catch(e){ VAULT_W = 0n; VAULT_PAID = 0n; }
+  if($("stPaid")) $("stPaid").textContent = M ? amt(VAULT_PAID, M.podDec) + " " + M.podSym : "-";
+}
+
+// Lifetime claims for one wallet. Summed from logs because the vault stores a
+// protocol-wide total only.
+async function loadMyClaimed(){
+  MY_CLAIMED = 0n; CLAIMED_OK = true;
+  const addr = stakingAddr();
+  if(!addr || !account) return;
+  // Chunked the way position discovery is. Most public nodes cap a log range at
+  // around 10k blocks and reject anything wider; the single unbounded query this
+  // replaces failed silently and reported zero claims to a wallet that had
+  // claimed. A wrong number is worse than no number, so a failure shows a dash.
+  try{
+    const latest = parseInt(await rpc("eth_blockNumber", []), 16);
+    const from = (M.pool && M.pool.fromBlock) ? M.pool.fromBlock : Math.max(0, latest - 2_000_000);
+    const CHUNK = Number((M.pool && M.pool.logChunk) || 100000);
+    for(let hi = latest; hi >= from; hi -= CHUNK){
+      const lo = Math.max(from, hi - CHUNK + 1);
+      const logs = await rpc("eth_getLogs", [{
+        address: addr, fromBlock:"0x"+lo.toString(16), toBlock:"0x"+hi.toString(16),
+        topics:[TOPIC_CLAIMED, "0x"+wAddr(account)],
+      }]);
+      for(const l of logs) MY_CLAIMED += toBig(l.data);
+    }
+  }catch(e){ CLAIMED_OK = false; }
+}
+
+function stakingAddr(){ return (M && M.staking) ? M.staking : null; }
+
+// Mirrors MillLPStaking.WARMUP. Used only for wording and the countdown - the
+// contract is the authority and reverts an early activation.
+const WARMUP_S = 300;
+const nowSec = () => Math.floor(Date.now()/1000);
+function dueForActivation(){
+  if(!STAKE) return [];
+  return STAKE.mine.filter(m => !m.active && m.activeAt && nowSec() >= m.activeAt);
+}
+function countdown(sec){
+  if(sec <= 0) return "ready";
+  const m = Math.floor(sec/60), s = sec % 60;
+  return m ? m + "m " + s + "s" : s + "s";
+}
+
+async function loadStaking(){
+  const addr = stakingAddr();
+  const card = $("stCard");
+  if(!addr || !POOL){
+    card.style.display = "none";
+    if($("stNone")) $("stNone").style.display = POOL ? "block" : "none";
+    STAKE = null; renderLpList(); return;
+  }
+  card.style.display = "block";
+  if($("stNone")) $("stNone").style.display = "none";
+  $("stAddr").innerHTML = "Staking vault " + addrCell(addr, short(addr)) +
+    (STAKE_BAL > 0n ? " \u00b7 holding " + amt(STAKE_BAL, M.podDec) + " " + M.podSym : "");
+
+  if(!account){
+    STAKE = {addr, mine:[], pending:0n, held:0n};
+    $("stPending").textContent = "-"; $("stMine").textContent = "-"; $("stHeld").textContent = "-";
+    renderLpList();
+    $("stClaim").disabled = false; $("stClaim").textContent = "Connect Wallet";
+    return;
+  }
+
+  let ids = [], pendingTotal = 0n, held = 0n, parked = 0n, lpBps = 0n;
+  try{
+    const [idsHex, pf, tw, vaultBal, parkedHex, lpHex] = await Promise.all([
+      call(addr, SEL.stakedTokens + wAddr(account)),
+      call(addr, SEL.pendingFor + wAddr(account)),
+      call(addr, SEL.totalWeight),
+      call(M.address, SEL.balanceOf + wAddr(addr)),
+      call(M.address, SEL.balanceOf + wAddr(M.address)),
+      call(M.address, SEL.lpBps),
+    ]);
+    const body = idsHex.replace(/^0x/,"").slice(64);
+    const n = Number(BigInt("0x"+body.slice(0,64)));
+    for(let i=0;i<n;i++) ids.push(BigInt("0x"+body.substr(64 + i*64, 64)).toString());
+    pendingTotal = toBig(pf);
+    held = toBig(tw);            // total weight staked by everyone
+    STAKE_BAL = toBig(vaultBal); // what the vault is holding right now
+    parked = toBig(parkedHex);   // fees still in the Mill, not yet processed
+    lpBps  = toBig(lpHex);
+  }catch(e){ card.style.display = "none"; return; }
+
+  // amounts for staked positions: the VAULT owns them now, so ask about it
+  let detail = [];
+  if(ids.length){
+    try{
+      const enc = "0x" + SEL.positionsByIds.slice(2) + wAddr(addr) + wKey(POOL.key)
+                + w(0xe0) + w(ids.length) + ids.map(i => w(i)).join("");
+      detail = decodePositions(await rpc("eth_call", [{to:CFG.lens, data:enc}, "latest"]));
+    }catch(e){}
+  }
+  // A position carries no weight and earns nothing until it has served the
+  // vault's warm-up and been activated. Read that state so the card can say so,
+  // rather than showing a stake that mysteriously earns zero.
+  const [per, info] = await Promise.all([
+    Promise.all(ids.map(id => call(addr, SEL.pending + w(id)).then(toBig).catch(() => 0n))),
+    Promise.all(ids.map(id => call(addr, SEL.stakes + w(id)).then(h => ({
+      activeAt: Number(toBig("0x" + wordAt(h, 2))),
+      active:   toBig("0x" + wordAt(h, 3)) === 1n,
+    })).catch(() => ({activeAt:0, active:true})))),
+  ]);
+
+  STAKE = {addr, mine:ids.map((id,i) => ({
+    tokenId:id, pending:per[i], activeAt:info[i].activeAt, active:info[i].active,
+    d: detail.find(d => d.tokenId === id) || null,
+  })), pending:pendingTotal, held};
+
+  // `pending` is a view, so it cannot settle fees that are still sitting in the
+  // Mill - but `claim` will, because `sync` calls `processFees` on the way in.
+  // Add the LP leg of the parked amount, or the button reads "nothing to claim"
+  // at the exact moment it is about to pay you.
+  const mine = STAKE.mine.reduce((t,m) => t + (m.d ? m.d.liquidity : 0n), 0n);
+  const unsettled = (held > 0n && mine > 0n && lpBps > 0n)
+    ? parked * lpBps / 10000n * mine / held : 0n;
+  const claimable = pendingTotal + unsettled;
+  STAKE.pending = claimable;
+
+  $("stPending").textContent  = amt(claimable, M.podDec);
+  $("stPendingU").textContent = M.podSym + (unsettled > 0n ? " · incl. unsettled" : "");
+  $("stMine").textContent     = String(ids.length);
+  // share of the pool's staked liquidity, which is exactly the share of future
+  // rewards. More use than a raw liquidity number nobody can interpret.
+  $("stHeld").textContent = held === 0n ? "-"
+    : (Number(mine * 1000000n / held) / 10000).toFixed(2) + "%";
+  $("stHeldU").textContent = "of staked liquidity";
+
+  renderLpList();
+  if($("stPaid")) $("stPaid").textContent = amt(VAULT_PAID, M.podDec) + " " + M.podSym;
+
+  const due = dueForActivation();
+  const warm = STAKE.mine.filter(m => !m.active).length;
+  if(due.length){
+    $("stClaim").disabled = false;
+    $("stClaim").textContent = "Activate " + due.length + " position" + (due.length > 1 ? "s" : "");
+  }else{
+    $("stClaim").disabled = claimable === 0n;
+    $("stClaim").textContent = claimable === 0n ? "Nothing to claim"
+      : "Claim " + amt(claimable, M.podDec) + " " + M.podSym;
+  }
+  $("stWarm").style.display = warm ? "block" : "none";
+  $("stWarm").textContent = warm
+    ? warm + " position" + (warm > 1 ? "s are" : " is") + " warming up. A new stake earns nothing"
+      + " for the first " + Math.round(WARMUP_S/60) + " minutes, then has to be activated -"
+      + " anyone can do that, and the button above will when it is due."
+    : "";
+  refreshApy(); loadMine();
+}
+
+function setStStatus(text, hash, cls){
+  // Staking actions can be started from either the Positions tab or the
+  // Rewards tab, so the line is written to whichever one the user is looking at.
+  const html = (cls === undefined && text ? '<span class="spin"></span>' : "") + "<span>"+text+"</span>" +
+    (hash ? ' <a href="'+CFG.explorer+'/tx/'+hash+'" target="_blank" rel="noopener">view</a>' : "");
+  for(const id of ["stStatus", "lqStatus"]){
+    const el = $(id);
+    if(!el) continue;
+    el.className = "status" + (cls ? " " + cls : "");
+    el.innerHTML = html;
+  }
+}
+async function sendSt(to, data, pending, done){
+  setStStatus(pending);
+  const hash = await window.ethereum.request({method:"eth_sendTransaction", params:[{from:account, to, data}]});
+  setStStatus(pending, hash);
+  const rec = await waitReceipt(hash);
+  if(rec.status !== "0x1"){ setStStatus("Transaction reverted.", hash, "bad"); return false; }
+  setStStatus(done, hash, "ok");
+  return true;
+}
+
+/// Staking is a single safeTransferFrom - the vault's onERC721Received registers
+/// it. No approval step, and nothing to forget half way through.
+async function doStake(tokenId){
+  if(!account) return connect();
+  const addr = stakingAddr();
+  if(!addr) return;
+  try{
+    if(await sendSt(CFG.posm, SEL.safeTransferFrom + wAddr(account) + wAddr(addr) + w(tokenId),
+                    "Staking #"+tokenId+"…", "Staked.")){
+      await loadPositions(); await loadStaking();
+    }
+  }catch(e){ setStStatus(readErr(e), null, "bad"); }
+}
+async function doUnstake(tokenId){
+  if(!account) return connect();
+  try{
+    if(await sendSt(STAKE.addr, SEL.unstake + w(tokenId),
+                    "Unstaking #"+tokenId+"…", "Unstaked and paid.")){
+      await loadPositions(); await loadStaking(); await loadLpUser();
+    }
+  }catch(e){ setStStatus(readErr(e), null, "bad"); }
+}
+/// activate(uint256[]) - one dynamic array: head offset, length, then ids.
+/// Permissionless, so anyone can wake up anyone's warm position.
+async function doActivate(ids){
+  if(!account) return connect();
+  if(!ids.length) return;
+  try{
+    const data = SEL.activate + w(0x20) + w(ids.length) + ids.map(i => w(i)).join("");
+    const label = ids.length > 1 ? ids.length + " positions" : "#" + ids[0];
+    if(await sendSt(STAKE.addr, data, "Activating " + label + "\u2026", "Activated. It earns from now on.")){
+      await loadStaking(); await loadPositions();
+    }
+  }catch(e){ setStStatus(readErr(e), null, "bad"); }
+}
+$("stClaim").onclick = async () => {
+  if(!account) return connect();
+  $("stClaim").disabled = true;
+  try{
+    const due = dueForActivation();
+    if(due.length){
+      await doActivate(due.map(m => m.tokenId));
+    }else if(await sendSt(STAKE.addr, SEL.claimAll, "Claiming\u2026", "Claimed.")){
+      await loadVaultTotals(); await loadStaking(); await loadLpUser();
+    }
+  }catch(e){ setStStatus(readErr(e), null, "bad"); }
+};
+
+// ===========================================================================
+// routing
+// ===========================================================================
+// The documentation is a set of pages behind one route, the way a handbook is
+// a set of chapters. #/docs alone lands on the overview.
+const DOC_TITLES = {
+  overview:"Overview", milled:"Milled assets", arbitrage:"Arbitrage routes",
+  stocks:"Tokenised stocks", mill:"$MILL", revenue:"Protocol revenue",
+};
+function showDoc(slug){
+  if(!DOC_TITLES[slug]) slug = "overview";
+  [...document.querySelectorAll(".docpage")].forEach(a =>
+    a.classList.toggle("on", a.id === "doc-" + slug));
+  [...document.querySelectorAll(".docnav a")].forEach(a =>
+    a.className = a.dataset.doc === slug ? "on" : "");
+  $("pageTitle").textContent = DOC_TITLES[slug];
+}
+
+function route(){
+  const h = location.hash;
+  const millMatch = h.match(/^#\/mill\/(0x[0-9a-fA-F]{40})$/);
+  const docMatch = h.match(/^#\/docs(?:\/([a-z]+))?$/);
+  const docs = !!docMatch;
+
+  $("viewIndex").hidden = !!millMatch || docs;
+  $("viewMill").hidden  = !millMatch;
+  $("viewDocs").hidden  = !docs;
+  $("back").style.display = millMatch ? "inline-flex" : "none";
+  $("navFarm").className = docs ? "" : "on";
+  $("navDocs").className = docs ? "on" : "";
+
+  // Leaving a mill has to clear M, or the 12s refresh keeps re-rendering it and
+  // writes the mill's symbol over the page title.
+  if(docs){ M = null; renderSideTokens(); showDoc(docMatch[1] || "overview"); }
+  else if(millMatch){
+    const found = MILLDATA.find(m => m.address.toLowerCase() === millMatch[1].toLowerCase());
+    if(found) renderMill(found);
+    else { $("pageTitle").textContent = "Loading\u2026";
+           readMill({address:millMatch[1]}).then(renderMill).catch(()=>{}); }
+  }else{ M = null; renderSideTokens(); $("pageTitle").textContent = "Farm Volatility"; }
+  window.scrollTo(0,0);
+}
+window.addEventListener("hashchange", route);
+$("back").onclick = () => location.hash = "#/farm";
+
+// ===========================================================================
+// wallet
+// ===========================================================================
+let account = null;
+const hexChain = "0x" + CFG.chainId.toString(16);
+async function connect(){
+  const eth = window.ethereum;
+  if(!eth){ alert("No wallet found. Install MetaMask, or paste an address to view a position."); return; }
+  try{
+    account = (await eth.request({method:"eth_requestAccounts"}))[0];
+    const cur = await eth.request({method:"eth_chainId"});
+    if(parseInt(cur,16) !== CFG.chainId){
+      try{ await eth.request({method:"wallet_switchEthereumChain", params:[{chainId:hexChain}]}); }
+      catch(e){
+        if(e && e.code === 4902) await eth.request({method:"wallet_addEthereumChain", params:[{
+          chainId:hexChain, chainName:NET[CFG.chainId] || ("Chain "+CFG.chainId),
+          nativeCurrency:{name:"Ether", symbol:"ETH", decimals:18},
+          rpcUrls:[CFG.rpc], blockExplorerUrls:[CFG.explorer]}]});
+      }
+    }
+    onAccount();
+  }catch(e){}
+}
+function onAccount(){
+  const b = $("connect");
+  if(!account){ b.textContent = "Connect Wallet"; b.className = "btn"; return; }
+  b.textContent = short(account); b.className = "btn ghost";
+  $("who").value = account; position(); refreshUser(); loadLpUser(); loadPositions(); loadStaking(); loadMine();
+}
+if(window.ethereum && window.ethereum.on){
+  window.ethereum.on("accountsChanged", a => { account = a[0] || null; onAccount(); });
+  window.ethereum.on("chainChanged", () => location.reload());
+}
+$("connect").onclick = connect;
+
+// ===========================================================================
+// boot
+// ===========================================================================
+function fail(msg, hint){
+  const e = $("error");
+  e.style.display = "block"; e.className = "err";
+  e.innerHTML = "<b>Can't reach the chain.</b><br>" + msg + (hint ? "<br><br>"+hint : "");
+  $("live").classList.add("stale"); $("net").textContent = "offline";
+}
+$("tabWrap").onclick   = () => { mode="wrap";   setTab(); };
+$("tabUnwrap").onclick = () => { mode="unwrap"; setTab(); };
+function setTab(){
+  $("tabWrap").className   = mode==="wrap"   ? "on" : "";
+  $("tabUnwrap").className = mode==="unwrap" ? "on" : "";
+  syncTicks();
+}
+$("who").addEventListener("input", position);
+$("lx").href = LINKS.x; $("ltg").href = LINKS.tg; $("lgh").href = LINKS.gh;
+if(SHOW_DRAFTS) $("draftBanner").style.display = "flex";
+$("dNet").textContent = (NET[CFG.chainId] || "Chain") + " · " + CFG.chainId;
+$("dRpc").textContent = CFG.rpc;
+
+async function refresh(){
+  const [blk, ...ms] = await Promise.all([
+    rpc("eth_blockNumber", []),
+    ...liveMills().map(m => readMill(m).catch(() => null)),
+  ]);
+  MILLDATA = ms.filter(Boolean);
+  if(liveMills().length && !MILLDATA.length)
+    throw new Error("No mill could be read. Check the addresses in MILLS.");
+  renderIndex();
+  if(M){ const u = MILLDATA.find(x => x.address === M.address); if(u) renderMill(u); }
+  $("net").textContent = (NET[CFG.chainId] || ("Chain "+CFG.chainId)) + " · " + group(String(parseInt(blk,16)));
+  $("live").classList.remove("stale");
+  $("error").style.display = "none";
+}
+
+(async function boot(){
+  // Draw the roadmap before touching the network. If the RPC is down the page
+  // should still say what this protocol is, rather than showing only an error.
+  try{ renderIndex(); }catch(e){}
+  try{
+    const id = parseInt(await rpc("eth_chainId", []), 16);
+    if(id !== CFG.chainId) throw new Error("RPC reports chain "+id+", expected "+CFG.chainId);
+    await refresh();
+    route();
+    setInterval(() => refresh().catch(() => $("live").classList.add("stale")), 12000);
+    // A warming position has a countdown that has to move on its own, and it
+    // has to turn into an Activate button the moment it reaches zero.
+    setInterval(() => {
+      if(STAKE && STAKE.mine && STAKE.mine.some(m => !m.active)) renderLpList();
+    }, 5000);
+  }catch(e){
+    route();
+    fail(e.message, location.protocol === "file:"
+      ? "You've opened this straight off disk, so the browser refuses the request. Serve it instead:<br><code>python3 -m http.server 8000</code>"
+      : "Check the RPC is reachable and allows cross-origin requests from this host.");
+  }
+})();
+</script>
+</body>
+</html>
