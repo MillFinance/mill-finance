@@ -329,6 +329,25 @@
   }
 
 
+  /* ---------- the curtain ----------
+     Shown instead of the app when the build is published on hold. Deliberately
+     self-contained: it must render correctly even if everything below it is
+     hidden. */
+  #holdScreen{display:none; position:fixed; inset:0; z-index:100; background:var(--bg);
+              flex-direction:column; align-items:center; justify-content:center;
+              text-align:center; padding:28px; gap:0}
+  #holdScreen img{width:76px; height:76px; border-radius:18px; margin-bottom:22px}
+  #holdScreen .hn{font-size:22px; font-weight:700; letter-spacing:.5em; text-indent:.5em}
+  #holdScreen .hf{font-size:12px; font-weight:500; letter-spacing:.46em; text-indent:.46em;
+                  text-transform:uppercase; color:var(--ink-3); margin-top:4px}
+  #holdScreen h1{font-size:clamp(26px,5vw,34px); font-weight:600; margin:34px 0 0;
+                 letter-spacing:-.02em}
+  #holdScreen p{color:var(--ink-2); font-size:15px; max-width:42ch; margin:12px 0 0;
+                line-height:1.65}
+  /* .social carries margin-left:auto on phones for the top bar. The curtain is
+     centred, so it has to say so explicitly at every width. */
+  #holdScreen .social{margin-top:30px; margin-left:0; justify-content:center}
+
   /* Nothing on the page is worth a sideways scrollbar. If a table or a long
      address does need more room than the screen, it scrolls inside its own box,
      and .scrolly already does that. */
@@ -337,6 +356,19 @@
 </style>
 </head>
 <body>
+
+<div id="holdScreen">
+  <img src="" alt="Mill Finance" id="holdLogo">
+  <div class="hn">MILL</div><div class="hf">Finance</div>
+  <h1>Opening shortly</h1>
+  <p>The mill is being set up. This page will come to life on its own - no need
+     to do anything but come back in a few minutes.</p>
+  <div class="social">
+    <a id="hlx" target="_blank" rel="noopener" title="X"><svg viewBox="0 0 24 24"><path d="M18.2 2.3h3.3l-7.2 8.3 8.5 11.1h-6.7l-5.2-6.8-6 6.8H1.6l7.7-8.8L1.2 2.3H8l4.7 6.2zm-1.2 17.4h1.8L7.1 4.2H5.2z"/></svg></a>
+    <a id="hltg" target="_blank" rel="noopener" title="Telegram"><svg viewBox="0 0 24 24"><path d="M21.9 4.3l-3 14.2c-.2 1-.8 1.3-1.7.8l-4.6-3.4-2.2 2.1c-.2.2-.5.5-1 .5l.3-4.7 8.6-7.8c.4-.3-.1-.5-.6-.2L6.1 12.5l-4.6-1.4c-1-.3-1-1 .2-1.5l18-6.9c.8-.3 1.5.2 1.2 1.6z"/></svg></a>
+    <a id="hlgh" target="_blank" rel="noopener" title="GitHub"><svg viewBox="0 0 24 24"><path d="M12 .5A11.5 11.5 0 004.4 20.6c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.3 1.2-3.2 0-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 015.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.9 1.2 1.9 1.2 3.2 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.5 11.5 0 0012 .5z"/></svg></a>
+  </div>
+</div>
 
 <aside class="side">
   <a class="brandbox" href="#/farm" title="Farm Volatility" aria-label="Mill Finance - home">
@@ -880,9 +912,19 @@
 // ===========================================================================
 // CONFIG - edit these
 // ===========================================================================
+// Publish the site on hold: the app is replaced by a holding screen until you
+// publish again with it off. `./publish.sh live --hold` sets this in the BUILT
+// copy, so this line normally stays false and is never edited by hand.
+//
+// This is a curtain over the front end and nothing more. The contracts are on a
+// public chain and anyone can call them directly - if the goal is that nobody
+// can wrap before you are ready, the answer is not to deploy the vault yet.
+// `disableWrapForever` is exactly what it says and can never be undone.
+const HOLD = false;
+
 const LINKS = {
   x:  "https://x.com/MillFinanceRH",
-  tg: "https://t.me/millfi",
+  tg: "https://t.me/millfinance",
   gh: "https://github.com/MillFinance/mill-finance",
 };
 
@@ -927,6 +969,8 @@ const TOKENS = [
 ];
 
 const Q = new URLSearchParams(location.search);
+// ?open=1 walks past the curtain, so you can check the real app while it is up.
+const HELD = HOLD && Q.get("open") !== "1";
 const CFG = {
   rpc:      Q.get("rpc")  || "https://rpc.mainnet.chain.robinhood.com",
   chainId:  Number(Q.get("chain") || 4663),
@@ -2350,6 +2394,14 @@ async function refresh(){
 }
 
 (async function boot(){
+  if(HELD){
+    $("holdLogo").src = document.querySelector(".brandbox img").src;
+    $("hlx").href = LINKS.x; $("hltg").href = LINKS.tg; $("hlgh").href = LINKS.gh;
+    document.querySelector(".side").style.display = "none";
+    document.querySelector("main").style.display = "none";
+    $("holdScreen").style.display = "flex";
+    return;
+  }
   // Draw the roadmap before touching the network. If the RPC is down the page
   // should still say what this protocol is, rather than showing only an error.
   try{ renderIndex(); }catch(e){}
